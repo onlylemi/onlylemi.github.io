@@ -47,8 +47,8 @@ dl,
 dt,
 dd,
 ol,
-ul,
-li,
+/*ul,*/
+/*li,*/
 fieldset,
 form,
 label,
@@ -107,10 +107,10 @@ body {
     line-height: 1
 }
 
-ol,
-ul {
-    list-style: none
-}
+/*ol,*/
+/*ul {*/
+    /*list-style: none*/
+/*}*/
 
 blockquote,
 q {
@@ -337,12 +337,12 @@ select {
     width: auto
 }
 
-ul,
-ol {
-    list-style-type: none;
-    margin: 0;
-    padding: 0
-}
+/*ul,*/
+/*ol {*/
+    /*list-style-type: none;*/
+    /*margin: 0;*/
+    /*padding: 0*/
+/*}*/
 
 dl {
     margin-bottom: .75em
@@ -593,7 +593,6 @@ hr {
 .intro a,
 .nav-menu a,
 .post-link,
-/*.post a,*/
 .page a,
 .pagination .prev,
 .pagination .next {
@@ -609,7 +608,6 @@ hr {
 .intro a:hover,
 .nav-menu a:hover,
 .post-link:hover,
-/*.post a:hover,*/
 .page a:hover,
 .pagination .prev:hover,
 .pagination .next:hover,
@@ -618,7 +616,6 @@ hr {
 .intro a:focus,
 .nav-menu a:focus,
 .post-link:focus,
-/*.post a:focus,*/
 .page a:focus,
 .pagination .prev:focus,
 .pagination .next:focus,
@@ -627,7 +624,6 @@ hr {
 .intro a:active,
 .nav-menu a:active,
 .post-link:active,
-/*.post a:active,*/
 .page a:active,
 .pagination .prev:active,
 .pagination .next:active,
