@@ -11,79 +11,57 @@
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <link rel="stylesheet" href="../../assets/css/main.css">
+    <link href='https://dn-maxiang.qbox.me/res-min/themes/marxico.css' rel='stylesheet'>
     <link rel="shortcut icon" type="image/ico" href="../../assets/images/favicon.png">
 </head>
 <body>
 <main class="wrapper">
     <header class="site-header">
-        <nav class="nav">
-            <div class="container">
-                <h1 class="logo">
-                    <a href="../../">
-                        onlylemi
-                        <span>blog</span>
-                    </a>
-                </h1>
-                <ul class="navbar">
-                    <li>
-                        <a href="../../about">about</a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank">resume</a>
-                    </li>
+        <nav class="nav-main">
+            <div class="all-container">
+                <h1 class="logo"><a href="../../">onlylemi<span> blog</span></a></h1>
+                <ul class="nav-menu">
+                    <li><a href="../../about">about</a></li>
+                    <li><a href="#" target="_blank">resume</a></li>
                 </ul>
             </div>
         </nav>
     </header>
-    <article class="post container" itemscope itemtype="http://schema.org/BlogPosting">
+    <article class="post all-container" itemscope itemtype="http://schema.org/BlogPosting">
         <header class="post-header"><h1 class="post-title" itemprop="name headline">Lorem ipsum dolor sit amet</h1>
             <p class="post-meta">
                 <time datetime="2015-11-12T19:19:43+00:00" itemprop="datePublished">Nov 12, 2015</time>
             </p>
         </header>
         <div class="post-content" itemprop="articleBody"><p>
-            <strong>Pellentesque habitant morbi tristique</strong>
-            senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies
-            eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae
-            est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum
-            erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget
-            tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non
-            enim</a> in turpis pulvinar facilisis. Ut felis.</p>
-            <h2>Header Level 2</h2>
-            <ol>
-                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-                <li>Aliquam tincidunt mauris eu risus.</li>
-            </ol>
-            <blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis
-                aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at
-                sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium
-                ornare est.</p></blockquote>
-            <h3>Header Level 3</h3>
-            <ul>
-                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-                <li>Aliquam tincidunt mauris eu risus.</li>
-            </ul>
-            <h4>Header Level 4</h4> <h5>Header Level 5</h5> <h6>Header Level 6</h6>
-            <div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nf">#header</span> <span
-                    class="nt">h1</span> <span class="nt">a</span> <span class="p">{</span>
-                <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span
-                        class="p">;</span>
-                <span class="k">width</span><span class="o">:</span> <span class="m">300px</span><span
-                        class="p">;</span>
-                <span class="k">height</span><span class="o">:</span> <span class="m">80px</span><span
-                        class="p">;</span>
-                <span class="p">}</span></code></pre>
-            </div>
+            <h1 id="processing-android-capture">processing-android-capture</h1>
+            <h2 id="lib介绍">Lib介绍</h2>
+            <p>这是一个有关 <a href="https://processing.org">processing</a> 和 <a href="https://android.com">android</a>
+                交互的<code>library</code>。通过<code>Android app</code>客户端获取手机的摄像头图像及各类传感器的数据通过局域网<code>WiFi</code>通信<code>socket</code>编程技术发送到<code>processing</code>服务端，服务端接受数据然后进行图像处理、数据应用。
+            </p>
+            <pre class="prettyprint hljs-dark"><code class="language-processing hljs"><span
+                    class="hljs-comment line-number">1.</span><span class="hljs-keyword">void</span> <span
+                    class="hljs-title">setup</span>() {<br><span class="hljs-comment line-number">2.</span> <span
+                    class="hljs-built_in">size</span>(<span class="hljs-number">720</span>, <span class="hljs-number">480</span>);<br><span
+                    class="hljs-comment line-number">3.</span> <span class="hljs-built_in">background</span>(<span
+                    class="hljs-number">0</span>);<br><span class="hljs-comment line-number">4.</span> <span
+                    class="hljs-comment">// 初始化对象</span><br><span class="hljs-comment line-number">5.</span> <span
+                    class="hljs-comment">// 参数含义： 0 获取数据速率</span><br><span class="hljs-comment line-number">6.</span> as
+                = <span class="hljs-keyword">new</span> PAndroidSensor(<span class="hljs-number">0</span>);<br><span
+                        class="hljs-comment line-number">7.</span> as.start();<br><span
+                        class="hljs-comment line-number">8.</span>}<br></code></pre>
         </div>
     </article>
     <aside id="comments" class="disqus">
-        <div class="container"><h3><i class="icon icon-comments-o"></i> Comments</h3>
+        <div class="all-container"><h3><i class="icon icon-comments-o"></i> Comments</h3>
             <div id="disqus_thread"></div>
             <script type="text/javascript">
+                var host_port = window.location.protocol + "//" + window.location.host;
+                var url = window.location.href;
                 var disqus_shortname = 'onlylemi';
-                var disqus_identifier = '/2015/lorem';
-                var disqus_title = 'Lorem ipsum dolor sit amet';
-                var disqus_url = window.location.href;
+                var disqus_identifier = url.substring(host_port.length, url.length);
+                var disqus_title = document.title;
+                var disqus_url = url;
                 /*var disqus_developer = 1;*/
                 (function () {
                     var dsq = document.createElement('script');
@@ -97,9 +75,9 @@
         </div>
     </aside>
     <footer class="site-footer">
-        <div class="container">
+        <div class="all-container">
             <small class="pull-left">
-                &copy;2016 All rights reserved. <a href="http://onlylemi.com/" target="_blank">Jianbin Qi</a>
+                &copy;2016 <a href="http://onlylemi.com/" target="_blank">Jianbin Qi</a>. All rights reserved.
             </small>
             <div class="pull-right">
                 <a href="https://www.linkedin.com/in/onlylemi" target="_blank" title="Linkedin"><img

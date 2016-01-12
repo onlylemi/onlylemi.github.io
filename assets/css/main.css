@@ -436,15 +436,37 @@ p.lead {
 
 a {
     color: #ec2028;
-    text-decoration: none;
-    transition: color 150ms ease
+    transition: color 150ms ease;
+    text-decoration:none
 }
 
 a:active,
 a:focus,
 a:hover {
-    color: #b1181e
+    color: #b1181e;
+    text-decoration:none
 }
+
+.site-header a,.site-footer a {
+    color: #ec2028;
+    transition: color 150ms ease
+}
+
+.site-header a:active,
+.site-header a:focus,
+.site-header a:hover {
+    color: #b1181e;
+    text-decoration:none
+}
+
+.site-footer a:active,
+.site-footer a:focus,
+.site-footer a:hover {
+    color: #b1181e;
+    text-decoration:none
+}
+
+
 
 hr {
     border-bottom: 1px solid #ccc;
@@ -535,14 +557,21 @@ hr {
     margin: .75em 0
 }
 
-.container {
+.all-container {
     padding: 1.5em;
     margin-left: auto;
     margin-right: auto;
     max-width: 800px
 }
 
+.all-container code{
+    color: #000000;
+    background-color: rgba(176, 179, 183, 0.48);
+    border-radius: 4px
+}
+
 .pull-left {
+    margin-bottom: 10px;
     float: left
 }
 
@@ -562,9 +591,9 @@ hr {
 
 .link,
 .intro a,
-.navbar a,
+.nav-menu a,
 .post-link,
-.post a,
+/*.post a,*/
 .page a,
 .pagination .prev,
 .pagination .next {
@@ -578,27 +607,27 @@ hr {
 
 .link:hover,
 .intro a:hover,
-.navbar a:hover,
+.nav-menu a:hover,
 .post-link:hover,
-.post a:hover,
+/*.post a:hover,*/
 .page a:hover,
 .pagination .prev:hover,
 .pagination .next:hover,
 .site-footer a:hover,
 .link:focus,
 .intro a:focus,
-.navbar a:focus,
+.nav-menu a:focus,
 .post-link:focus,
-.post a:focus,
+/*.post a:focus,*/
 .page a:focus,
 .pagination .prev:focus,
 .pagination .next:focus,
 .site-footer a:focus,
 .link:active,
 .intro a:active,
-.navbar a:active,
+.nav-menu a:active,
 .post-link:active,
-.post a:active,
+/*.post a:active,*/
 .page a:active,
 .pagination .prev:active,
 .pagination .next:active,
@@ -632,7 +661,7 @@ hr {
     color: #bbb;
 }
 
-.logo {
+.site-header .logo {
     float: left;
     margin: 0 0 1em 0;
     cursor: pointer;
@@ -643,15 +672,15 @@ hr {
     font-weight: 300
 }
 
-.logo span {
+.site-header .logo span {
     font-weight: 700
 }
 
-.nav {
+.site-header .nav-main {
     min-height: 64px
 }
 
-.navbar {
+.site-header .nav-menu {
     float: right;
     margin: 0;
     position: relative;
@@ -660,7 +689,7 @@ hr {
     cursor: pointer
 }
 
-.navbar li {
+.site-header .nav-main .nav-menu li {
     display: inline-block;
     padding: 0 .6em
 }
