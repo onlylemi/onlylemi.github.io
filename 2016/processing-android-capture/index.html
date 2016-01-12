@@ -106,16 +106,26 @@
 <hr>
 
 <ul>
-<li>导包 <br>
+<li>导包</li>
+</ul>
+
 <pre class="prettyprint hljs-dark"><code class="language-processing hljs hljs avrasm"><span class="hljs-comment line-number"><span class="hljs-number">1.</span></span><span class="hljs-comment">// 导包</span>
 <span class="hljs-comment line-number"><span class="hljs-number">2.</span></span><span class="hljs-keyword">import</span> <span class="hljs-keyword">com</span><span class="hljs-preprocessor">.onlylemi</span><span class="hljs-preprocessor">.processing</span><span class="hljs-preprocessor">.android</span><span class="hljs-preprocessor">.capture</span>.*<span class="hljs-comment">;</span>
-</code></pre></li>
-<li>声明（<strong>PAndroidCamera类</strong>） <br>
+</code></pre>
+
+<ul>
+<li>声明（<strong>PAndroidCamera类</strong>）</li>
+</ul>
+
 <pre class="prettyprint hljs-dark"><code class="language-processing hljs hljs cs"><span class="hljs-comment line-number"><span class="hljs-number">1.</span></span><span class="hljs-comment"><span class="hljs-comment">// 声明</span></span>
 <span class="hljs-comment line-number"><span class="hljs-number">2.</span></span>PAndroidCamera ac;
 <span class="hljs-comment line-number"><span class="hljs-number">3.</span></span><span class="hljs-keyword">PImage</span> img;
-</code></pre></li>
-<li>在<strong>setup</strong>函数中初始化，并且开启捕捉 <br>
+</code></pre>
+
+<ul>
+<li>在<strong>setup</strong>函数中初始化，并且开启捕捉</li>
+</ul>
+
 <pre class="prettyprint hljs-dark"><code class="language-processing hljs hljs markdown"><span class="hljs-comment line-number">1.</span><span class="hljs-keyword">void</span> <span class="hljs-title">setup</span>() {
 <span class="hljs-comment line-number"><span class="hljs-bullet">2.</span></span><span class="hljs-bullet">    </span><span class="hljs-built_in">size</span>(<span class="hljs-number">720</span>, <span class="hljs-number">480</span>);
 <span class="hljs-comment line-number"><span class="hljs-bullet">3.</span></span><span class="hljs-bullet">    </span><span class="hljs-comment">// 初始化对象</span>
@@ -125,14 +135,19 @@
 <span class="hljs-comment line-number"><span class="hljs-bullet">7.</span></span><span class="hljs-bullet">    </span>ac = <span class="hljs-keyword">new</span> PAndroidCamera(<span class="hljs-variable">width</span>, <span class="hljs-variable">height</span>, <span class="hljs-number">30</span>);
 <span class="hljs-comment line-number"><span class="hljs-bullet">8.</span></span><span class="hljs-bullet">    </span>ac.start();
 <span class="hljs-comment line-number">9.</span>};
-</code></pre></li>
-<li>在<strong>draw</strong>函数中调用<strong>getCameraImage（）</strong>函数获取图像 <br>
+</code></pre>
+
+<ul>
+<li>在<strong>draw</strong>函数中调用<strong>getCameraImage（）</strong>函数获取图像</li>
+</ul>
+
 <pre class="prettyprint hljs-dark"><code class="language-processing hljs hljs markdown"><span class="hljs-comment line-number">1.</span><span class="hljs-keyword">void</span> <span class="hljs-title">draw</span>() {
 <span class="hljs-comment line-number"><span class="hljs-bullet">2.</span></span><span class="hljs-bullet">    </span><span class="hljs-comment">// 获取图像</span>
 <span class="hljs-comment line-number"><span class="hljs-bullet">3.</span></span><span class="hljs-bullet">    </span>img = ac.getCameraImage();
 <span class="hljs-comment line-number"><span class="hljs-bullet">4.</span></span><span class="hljs-bullet">    </span><span class="hljs-built_in">image</span>(img, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>);
 <span class="hljs-comment line-number">5.</span>}
-</code></pre> <br>
+</code></pre>
+
 <pre class="prettyprint hljs-dark"><code class="language-processing hljs hljs markdown"><span class="hljs-comment line-number">1.</span><span class="hljs-keyword">void</span> <span class="hljs-title">draw</span>(){
 <span class="hljs-comment line-number"><span class="hljs-bullet">2.</span></span><span class="hljs-bullet">    </span><span class="hljs-built_in">translate</span>(<span class="hljs-variable">width</span> / <span class="hljs-number">2</span>, <span class="hljs-variable">height</span> / <span class="hljs-number">2</span>);
 <span class="hljs-comment line-number"><span class="hljs-bullet">3.</span></span><span class="hljs-bullet">    </span><span class="hljs-comment">// 获取颜色</span>
@@ -140,8 +155,7 @@
 <span class="hljs-comment line-number"><span class="hljs-bullet">5.</span></span><span class="hljs-bullet">    </span><span class="hljs-built_in">fill</span>(c);
 <span class="hljs-comment line-number"><span class="hljs-bullet">6.</span></span><span class="hljs-bullet">    </span><span class="hljs-built_in">ellipse</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">300</span>, <span class="hljs-number">300</span>);
 <span class="hljs-comment line-number">7.</span>}
-</code></pre></li>
-</ul>
+</code></pre>
 
 <p>至此 <strong>PAndroidCamera</strong> 类的功能就介绍完毕，具体效果在后面的实例中查看。</p>
 
@@ -170,15 +184,25 @@
 <hr>
 
 <ul>
-<li>导包 <br>
+<li>导包</li>
+</ul>
+
 <pre class="prettyprint hljs-dark"><code class="language-processing hljs hljs avrasm"><span class="hljs-comment line-number"><span class="hljs-number">1.</span></span><span class="hljs-comment">// 导包</span>
 <span class="hljs-comment line-number"><span class="hljs-number">2.</span></span><span class="hljs-keyword">import</span> <span class="hljs-keyword">com</span><span class="hljs-preprocessor">.onlylemi</span><span class="hljs-preprocessor">.processing</span><span class="hljs-preprocessor">.android</span><span class="hljs-preprocessor">.capture</span>.*<span class="hljs-comment">;</span>
-</code></pre></li>
-<li>声明（<strong>PAndroidSensor类</strong>） <br>
+</code></pre>
+
+<ul>
+<li>声明（<strong>PAndroidSensor类</strong>）</li>
+</ul>
+
 <pre class="prettyprint hljs-dark"><code class="language-processing hljs hljs cs"><span class="hljs-comment line-number"><span class="hljs-number">1.</span></span><span class="hljs-comment"><span class="hljs-comment">// 声明</span></span>
 <span class="hljs-comment line-number"><span class="hljs-number">2.</span></span>PAndroidSensor <span class="hljs-keyword">as</span>;
-</code></pre></li>
-<li>在<strong>setup</strong>函数中初始化，并且开启数据捕捉 <br>
+</code></pre>
+
+<ul>
+<li>在<strong>setup</strong>函数中初始化，并且开启数据捕捉</li>
+</ul>
+
 <pre class="prettyprint hljs-dark"><code class="language-processing hljs hljs cs"><span class="hljs-comment line-number"><span class="hljs-number">1.</span></span><span class="hljs-keyword"><span class="hljs-keyword">void</span></span> <span class="hljs-title">setup</span>() {
 <span class="hljs-comment line-number"><span class="hljs-number">2.</span></span>    <span class="hljs-built_in">size</span>(<span class="hljs-number"><span class="hljs-number">720</span></span>, <span class="hljs-number"><span class="hljs-number">480</span></span>);
 <span class="hljs-comment line-number"><span class="hljs-number">3.</span></span>    <span class="hljs-built_in">background</span>(<span class="hljs-number"><span class="hljs-number">0</span></span>);
@@ -187,8 +211,12 @@
 <span class="hljs-comment line-number"><span class="hljs-number">6.</span></span>    <span class="hljs-keyword">as</span> = <span class="hljs-keyword"><span class="hljs-keyword">new</span></span> PAndroidSensor(<span class="hljs-number"><span class="hljs-number">0</span></span>);
 <span class="hljs-comment line-number"><span class="hljs-number">7.</span></span>    <span class="hljs-keyword">as</span>.start();
 <span class="hljs-comment line-number"><span class="hljs-number">8.</span></span>}
-</code></pre></li>
-<li>在<strong>draw</strong>函数中调用相应函数进行数据获取（每种传感器数据获得都有两种方式） <br>
+</code></pre>
+
+<ul>
+<li>在<strong>draw</strong>函数中调用相应函数进行数据获取（每种传感器数据获得都有两种方式）</li>
+</ul>
+
 <pre class="prettyprint hljs-dark"><code class="language-processing hljs hljs cs"><span class="hljs-comment line-number"><span class="hljs-number">1.</span></span><span class="hljs-keyword"><span class="hljs-keyword">void</span></span> <span class="hljs-title">draw</span>() {
 <span class="hljs-comment line-number"><span class="hljs-number">2.</span></span>    <span class="hljs-built_in">background</span>(<span class="hljs-number"><span class="hljs-number">0</span></span>);
 <span class="hljs-comment line-number"><span class="hljs-number">3.</span></span>    <span class="hljs-built_in">fill</span>(<span class="hljs-number"><span class="hljs-number">255</span></span>);
@@ -218,9 +246,9 @@
 <span class="hljs-comment line-number"><span class="hljs-number">27.</span></span>    <span class="hljs-built_in"><span class="hljs-keyword">float</span></span> values8 = <span class="hljs-keyword">as</span>.getTemperatureSensorValues();
 <span class="hljs-comment line-number"><span class="hljs-number">28.</span></span>    <span class="hljs-built_in"><span class="hljs-keyword">float</span></span> values8 = <span class="hljs-keyword">as</span>.getSensorValues(PSensorType.TYPE_TEMPERATURE);
 <span class="hljs-comment line-number"><span class="hljs-number">29.</span></span>}
-</code></pre> <br>
-至此 <strong>PAndroidSensor</strong> 类的功能就介绍完毕，具体效果在后面的实例中查看。</li>
-</ul>
+</code></pre>
+
+<p>至此 <strong>PAndroidSensor</strong> 类的功能就介绍完毕，具体效果在后面的实例中查看。</p>
 
 <h2 id="具体示例">具体示例</h2>
 
