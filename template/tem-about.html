@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        <%= documentTitle %>
+    </title>
+    <meta name="description" content="onlylemi blog">
+    <meta name="keywords" content="onlylemi, blog, github">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link href='https://dn-maxiang.qbox.me/res-min/themes/marxico.css' rel='stylesheet'>
+    <link rel="shortcut icon" type="image/ico" href="../assets/images/favicon.png">
+</head>
+
+<body>
+<main class="wrapper">
+    <header class="site-header">
+        <nav class="nav-main">
+            <div class="all-container">
+                <h1 class="logo">
+                    <a href="../">
+                        onlylemi
+                        <span>blog</span>
+                    </a>
+                </h1>
+                <ul class="nav-menu">
+                    <li>
+                        <a href="../about">about</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">resume</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="intro">
+        <div class="author-image">
+            <a href="../"> <img src="../assets/images/author.png" class="gravatar" data-pin-nopin="true">
+            </a><span class="author-image-prompt">Back to Home</span>
+        </div>
+        <div class="all-container">
+            <h2 class="author-intro-name">Jianbin Qi</h2>
+            <h2 class="author-intro-work">Engineer, Creative Programmer</h2>
+        </div>
+    </section>
+    <article class="all-container">
+        <%= documentHTML %>
+    </article>
+    <aside id="comments" class="disqus">
+        <div class="all-container">
+            <h3><i class="icon icon-comments-o"></i>Messages</h3>
+            <div id="disqus_thread"></div>
+            <script type="text/javascript">
+                var host_port = window.location.protocol + "//" + window.location.host;
+                var url = window.location.href;
+                var disqus_shortname = 'onlylemi';
+                var disqus_identifier = url.substring(host_port.length, url.length);
+                var disqus_title = document.title;
+                var disqus_url = url;
+                /*var disqus_developer = 1;*/
+                (function () {
+                    var dsq = document.createElement('script');
+                    dsq.type = 'text/javascript';
+                    dsq.async = true;
+                    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+            </script>
+            <noscript>
+                Please enable JavaScript to view the
+                <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+            </noscript>
+        </div>
+    </aside>
+    <footer class="site-footer">
+        <div class="all-container">
+            <small class="pull-left">
+                &copy;2016 <a href="http://onlylemi.com/" target="_blank">Jianbin Qi</a>. All rights reserved.
+            </small>
+            <div class="pull-right">
+                <a href="https://www.linkedin.com/in/onlylemi" target="_blank" title="Linkedin"><img
+                        src="../assets/images/socity/linkedin.png"></a>&nbsp;
+                <a href="https://github.com/onlylemi" target="_blank" title="Github"><img
+                        src="../assets/images/socity/github.png"></a>&nbsp;
+                <a href="https://vimeo.com/onlylemi" target="_blank" title="Vimeo"><img
+                        src="../assets/images/socity/vimeo.png"></a>&nbsp;
+                <a href="https://www.facebook.com/onlylemi" target="_blank" title="Facebook"><img
+                        src="../assets/images/socity/facebook.png"></a>&nbsp;
+                <a href="http://www.tudou.com/home/onlylemi" target="_blank" title="Tudou"><img
+                        src="../assets/images/socity/tudou.png"></a>&nbsp;
+                <a href="http://weibo.com/xiaomi0623" target="_blank" title="Weibo"><img
+                        src="../assets/images/socity/weibo.png"></a>&nbsp;
+                <a href="http://weixin.sogou.com/gzh?openid=oIWsFt1WQSMPIW9lkUoajImkDdY8&ext=h3NILeBbx87vpCtXoLQ5DfyajDv9b2MOigEAKrZGQD9GPRDWO_cfbhakcnZSPAm7"
+                   target="_blank" title="Wechat:@onlylemi"><img src="../assets/images/socity/wechat.png"></a>
+            </div>
+        </div>
+    </footer>
+</main>
+</body>
+
+</html>
