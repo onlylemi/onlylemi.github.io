@@ -566,6 +566,19 @@ hr {
     border-radius: 4px
 }
 
+.pull-center {
+    text-align: center;
+}
+
+.intro .pull-center a {
+    display: inline-block;
+    padding-bottom: .08em;
+    border-bottom: 0px solid #ccc;
+    -webkit-transition: border 300ms linear;
+    -moz-transition: border 300ms linear;
+    transition: border 300ms linear
+}
+
 .pull-left {
     margin-bottom: 10px;
     float: left
