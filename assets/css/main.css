@@ -499,13 +499,14 @@ code {
 
 pre {
     -webkit-overflow-scrolling: touch;
-    font-family: "Courier New", monospace;
+    font-family: "Consolas", monospace;
     font-size: 0.9em;
     margin: 0
 }
 
-pre code {
-    line-height: 1.75em
+.post-content pre code {
+    line-height: 1.75em;
+    overflow:auto;
 }
 
 *,
@@ -642,7 +643,7 @@ hr {
 }
 
 .site-header {
-    border-top: 0px solid #ccc;
+    border-top: 2px solid #ccc;
     border-bottom: 1px solid #d9d9d9;
     margin-bottom: .75em;
     min-height: 80px
