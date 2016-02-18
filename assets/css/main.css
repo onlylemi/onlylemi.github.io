@@ -1159,8 +1159,8 @@ hr {
     transition: border 300ms linear;
 }
 
-.article-list em a,
-/*.article-list p:last-child a {
+.article-list em a
+/*.article-list p:last-child a*/ {
     display: inline-block;
     padding-bottom: .08em;
     border-bottom: 2px solid #ccc;
@@ -1173,7 +1173,7 @@ hr {
     border-bottom: 1px solid #d9d9d9
 }
 
-.article-list p:last-child {
+/*.article-list p:last-child {
     margin-top: 100px;
 }
 
@@ -1194,6 +1194,6 @@ hr {
     padding-left: 7px;
     padding-right: 5px;
     margin-left: 8px;
-}
+}*/
 
 
