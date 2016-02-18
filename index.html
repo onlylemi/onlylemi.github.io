@@ -17,70 +17,58 @@
     <link href='https://dn-maxiang.qbox.me/res-min/themes/marxico.css' rel='stylesheet'>
     <link rel="stylesheet" href="assets/css/fonta.css">
     <link rel="shortcut icon" type="image/ico" href="assets/images/favicon.png">
+    <script src="assets/js/jquery-1.8.3.min.js"></script>
 </head>
 
 <body>
-<main class="wrapper">
-    <header class="site-header">
-        <nav class="nav-main">
+    <main class="wrapper">
+        <header class="site-header">
+            <nav class="nav-main">
+                <div class="all-container">
+                    <h1 class="logo"><a href=""><span>onlylemi</span></a></h1>
+                    <ul class="nav-menu">
+                        <li><a href="about">about</a></li>
+                        <li><a href="resume" target="_blank">resume</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <section class="intro">
+            <div class="author-image">
+                <a href="about"> <img src="assets/images/author.png" class="gravatar" data-pin-nopin="true">
+                </a><span class="author-image-prompt">About the Author</span>
+            </div>
             <div class="all-container">
-                <h1 class="logo"><a href=""><span>onlylemi</span></a></h1>
-                <ul class="nav-menu">
-                    <li><a href="about">about</a></li>
-                    <li><a href="#" target="_blank">resume</a></li>
-                </ul>
+                <h2 class="author-intro-name">Jianbin Qi</h2>
+                <h2 class="author-intro-work">Android Developer, Creative Programmer</h2>
             </div>
-        </nav>
-    </header>
-    <section class="intro">
-        <div class="author-image">
-            <a href="about"> <img src="assets/images/author.png" class="gravatar" data-pin-nopin="true">
-            </a><span class="author-image-prompt">About the Author</span>
-        </div>
-        <div class="all-container">
-            <h2 class="author-intro-name">Jianbin Qi</h2>
-            <h2 class="author-intro-work">Android Developer, Creative Programmer</h2>
-        </div>
-    </section>
-    <section class="post-list">
-        <div class="all-container">
-            <h2>Writing...</h2>
-            <div class="article-list">
-                <p><em>Jan 11, 2016</em> — <strong><a href="2016/1/processing-android-capture/">Android Capture for
-                    Processing</a></strong> — This library tries to transfer data between Processing and Android. I make
-                    a android app to capture the real-time video from “Android Camera” and the real-time data from
-                    “Android Sensor” through the socket to the server (processing server) with WiFi… <em><a
-                            href="2016/1/processing-android-capture/">Read more</a></em></p>
-
-                <p><a href="#">« Prev</a> Month 1 of 2016 <a href="2016/2/">Next »</a></p>
+        </section>
+        <section class="post-list">
+            <div class="all-container">
+                <h2>Writing...</h2>
+                <div class="article-list">
+                    <p><em>Jan 11, 2016</em> — <strong><a href="blog/processing-android-capture/">Android Capture for Processing (一个processing与android交互的库)</a></strong></p>
+                </div>
             </div>
-        </div>
-    </section>
-    <footer class="site-footer">
-        <div class="all-container">
-            <small class="pull-left">
+        </section>
+        <footer class="site-footer">
+            <div class="all-container">
+                <small class="pull-left">
                 &copy;2016 <a href="http://onlylemi.com/" target="_blank">Jianbin Qi</a>. All rights
                 reserved.
             </small>
-            <div class="pull-right">
-                <a href="https://www.linkedin.com/in/onlylemi" target="_blank" title="Linkedin"><img
-                        src="assets/images/socity/linkedin.png"></a>&nbsp;
-                <a href="https://github.com/onlylemi" target="_blank" title="Github"><img
-                        src="assets/images/socity/github.png"></a>&nbsp;
-                <a href="https://vimeo.com/onlylemi" target="_blank" title="Vimeo"><img
-                        src="assets/images/socity/vimeo.png"></a>&nbsp;
-                <a href="https://www.facebook.com/onlylemi" target="_blank" title="Facebook"><img
-                        src="assets/images/socity/facebook.png"></a>&nbsp;
-                <a href="http://www.tudou.com/home/onlylemi" target="_blank" title="Tudou"><img
-                        src="assets/images/socity/tudou.png"></a>&nbsp;
-                <a href="http://weibo.com/xiaomi0623" target="_blank" title="Weibo"><img
-                        src="assets/images/socity/weibo.png"></a>&nbsp;
-                <a href="http://weixin.sogou.com/gzh?openid=oIWsFt1WQSMPIW9lkUoajImkDdY8&ext=h3NILeBbx87vpCtXoLQ5DfyajDv9b2MOigEAKrZGQD9GPRDWO_cfbhakcnZSPAm7"
-                   target="_blank" title="Wechat:@onlylemi"><img src="assets/images/socity/wechat.png"></a>
+                <div class="pull-right">
+                    <a href="https://www.linkedin.com/in/onlylemi" target="_blank" title="Linkedin"><img src="assets/images/socity/linkedin.png"></a>&nbsp;
+                    <a href="https://github.com/onlylemi" target="_blank" title="Github"><img src="assets/images/socity/github.png"></a>&nbsp;
+                    <a href="https://vimeo.com/onlylemi" target="_blank" title="Vimeo"><img src="assets/images/socity/vimeo.png"></a>&nbsp;
+                    <a href="https://www.facebook.com/onlylemi" target="_blank" title="Facebook"><img src="assets/images/socity/facebook.png"></a>&nbsp;
+                    <a href="http://www.tudou.com/home/onlylemi" target="_blank" title="Tudou"><img src="assets/images/socity/tudou.png"></a>&nbsp;
+                    <a href="http://weibo.com/xiaomi0623" target="_blank" title="Weibo"><img src="assets/images/socity/weibo.png"></a>&nbsp;
+                    <a href="http://weixin.sogou.com/gzh?openid=oIWsFt1WQSMPIW9lkUoajImkDdY8&ext=h3NILeBbx87vpCtXoLQ5DfyajDv9b2MOigEAKrZGQD9GPRDWO_cfbhakcnZSPAm7" target="_blank" title="Wechat:@onlylemi"><img src="assets/images/socity/wechat.png"></a>
+                </div>
             </div>
-        </div>
-    </footer>
-</main>
+        </footer>
+    </main>
 </body>
 
 </html>
