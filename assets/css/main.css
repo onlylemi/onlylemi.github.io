@@ -506,7 +506,7 @@ pre {
 
 .post-content pre code {
     line-height: 1.75em;
-    overflow:auto;
+    overflow: auto;
 }
 
 *,
@@ -612,7 +612,7 @@ hr {
     border-bottom: 2px solid #ccc;
     -webkit-transition: border 300ms linear;
     -moz-transition: border 300ms linear;
-    transition: border 300ms linear
+    transition: border 300ms linear;
 }
 
 .link:hover,
@@ -698,7 +698,8 @@ hr {
 
 .site-header .nav-main .nav-menu li {
     display: inline-block;
-    padding: 0 .6em
+    font-weight: bold;
+    padding: 0 .3em
 }
 
 .post-list {
@@ -1149,7 +1150,7 @@ hr {
     font-style: italic
 }
 
-.article-list strong a{
+.article-list strong a {
     font-weight: 700;
     display: inline-block;
     padding-bottom: .08em;
@@ -1160,7 +1161,8 @@ hr {
 }
 
 .article-list em a
-/*.article-list p:last-child a*/ {
+    /*.article-list p:last-child a*/
+{
     display: inline-block;
     padding-bottom: .08em;
     border-bottom: 2px solid #ccc;
@@ -1194,6 +1196,10 @@ hr {
     padding-left: 7px;
     padding-right: 5px;
     margin-left: 8px;
+}*/
+
+/*.post-content pre code {
+    white-space: nowrap;
 }*/
 
 
