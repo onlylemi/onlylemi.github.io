@@ -18,7 +18,7 @@ permalink: /about/
 	[Android Lab of NUC](https://github.com/android-nuc/AndroidTrian_InWinter)  
 	2016.01.21 - 2016.01.26
 * **AndroidCapture for Processing**  
-	This library tries to transfer data(Android Camera&Sensors) between Processing and Android.
+	This library tries to transfer data(Android Camera&Sensors) between Processing and Android.  
 	[Latest Release 2.0](https://github.com/onlylemi/processing-android-capture/releases/tag/latest)  
 	2015.12 - 2016.01
 * **The leader of Android innovation Laboratory**  

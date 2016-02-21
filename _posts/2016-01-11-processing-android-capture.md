@@ -53,18 +53,18 @@ title: 一个Processing与Android交互的库
 
 ---
 #### 使用步骤
- * 导包
+1、导包
 ```processing
 // 导包
 import com.onlylemi.processing.android.capture.*;
 ```
-* 声明（**PAndroidCamera类**）
+2、声明（**PAndroidCamera类**）
 ```processing
 // 声明
 PAndroidCamera ac;
 PImage img;
 ```
-* 在**setup**函数中初始化，并且开启捕捉
+3、在**setup**函数中初始化，并且开启捕捉
 ```processing
  void setup() {
     size(720, 480);
@@ -76,7 +76,7 @@ PImage img;
     ac.start();
 };
 ```
-* 在**draw**函数中调用**getCameraImage()**函数获取图像
+4、在**draw**函数中调用**getCameraImage()**函数获取图像
 ```processing
 void draw() {
     // 获取图像
@@ -117,17 +117,17 @@ void draw(){
 
 ---
 #### 使用步骤
-* 导包
+1、导包
 ```processing
 // 导包
 import com.onlylemi.processing.android.capture.*;
 ```
-* 声明（**PAndroidSensor类**）
+2、声明（**PAndroidSensor类**）
 ```processing
 // 声明
 PAndroidSensor as;
 ```
-* 在**setup**函数中初始化，并且开启数据捕捉
+3、在**setup**函数中初始化，并且开启数据捕捉
 ```processing
 void setup() {
     size(720, 480);
@@ -138,7 +138,7 @@ void setup() {
     as.start();
 }
 ```
-* 在**draw**函数中调用相应函数进行数据获取（每种传感器数据获得都有两种方式）
+4、在**draw**函数中调用相应函数进行数据获取（每种传感器数据获得都有两种方式）
 ```processing
 void draw() {
     background(0);
