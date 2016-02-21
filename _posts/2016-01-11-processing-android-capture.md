@@ -54,18 +54,18 @@ title: 一个Processing与Android交互的库
 ---
 #### 使用步骤
 1、导包
-```processing
+```java
 // 导包
 import com.onlylemi.processing.android.capture.*;
 ```
 2、声明（**PAndroidCamera类**）
-```processing
+```java
 // 声明
 PAndroidCamera ac;
 PImage img;
 ```
 3、在**setup**函数中初始化，并且开启捕捉
-```processing
+```java
  void setup() {
     size(720, 480);
     // 初始化对象
@@ -77,14 +77,14 @@ PImage img;
 };
 ```
 4、在**draw**函数中调用**getCameraImage()**函数获取图像
-```processing
+```java
 void draw() {
     // 获取图像
     img = ac.getCameraImage();
     image(img, 0, 0);
 }
 ```
-```processing
+```java
 void draw(){
     translate(width / 2, height / 2);
     // 获取颜色
