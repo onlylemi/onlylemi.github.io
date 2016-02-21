@@ -54,13 +54,46 @@ title: 一个Processing与Android交互的库
 ---
 #### 使用步骤
 1. 导包
- <pre class="prettyprint hljs-dark"><code class="language-processing hljs"><span class="hljs-comment line-number">1.</span><span class="hljs-comment">// 导包</span><br><span class="hljs-comment line-number">2.</span><span class="hljs-keyword">import</span> com.onlylemi.processing.android.capture.*;<br></code></pre>
+```processing
+// 导包
+import com.onlylemi.processing.android.capture.*;
+```
 2. 声明（**PAndroidCamera类**）
- <pre class="prettyprint hljs-dark"><code class="language-processing hljs"><span class="hljs-comment line-number">1.</span><span class="hljs-comment">// 声明</span><br><span class="hljs-comment line-number">2.</span>PAndroidCamera ac;<br><span class="hljs-comment line-number">3.</span><span class="hljs-keyword">PImage</span> img;<br></code></pre>
+```processing
+// 声明
+PAndroidCamera ac;
+PImage img;
+```
 3. 在**setup**函数中初始化，并且开启捕捉
- <pre class="prettyprint hljs-dark"><code class="language-processing hljs"><span class="hljs-comment line-number">1.</span><span class="hljs-keyword">void</span> <span class="hljs-title">setup</span>() {<br><span class="hljs-comment line-number">2.</span>    <span class="hljs-built_in">size</span>(<span class="hljs-number">720</span>, <span class="hljs-number">480</span>);<br><span class="hljs-comment line-number">3.</span>    <span class="hljs-comment">// 初始化对象</span><br><span class="hljs-comment line-number">4.</span>    <span class="hljs-comment">// 参数含义： width 图像的宽</span><br><span class="hljs-comment line-number">5.</span>    <span class="hljs-comment">//           height 图像的高</span><br><span class="hljs-comment line-number">6.</span>    <span class="hljs-comment">//           30 frame速率</span><br><span class="hljs-comment line-number">7.</span>    ac = <span class="hljs-keyword">new</span> PAndroidCamera(<span class="hljs-variable">width</span>, <span class="hljs-variable">height</span>, <span class="hljs-number">30</span>);<br><span class="hljs-comment line-number">8.</span>    ac.start();<br><span class="hljs-comment line-number">9.</span>};<br></code></pre>
+```processing
+ void setup() {
+    size(720, 480);
+    // 初始化对象
+    // 参数含义： width 图像的宽
+    //           height 图像的高
+    //           30 frame速率
+    ac = new PAndroidCamera(width, height, 30);
+    ac.start();
+};
+```
 4. 在**draw**函数中调用**getCameraImage()**函数获取图像
- <pre class="prettyprint hljs-dark"><code class="language-processing hljs"><span class="hljs-comment line-number">1.</span><span class="hljs-keyword">void</span> <span class="hljs-title">draw</span>() {<br><span class="hljs-comment line-number">2.</span>    <span class="hljs-comment">// 获取图像</span><br><span class="hljs-comment line-number">3.</span>    img = ac.getCameraImage();<br><span class="hljs-comment line-number">4.</span>    <span class="hljs-built_in">image</span>(img, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>);<br><span class="hljs-comment line-number">5.</span>}<br></code></pre><pre class="prettyprint hljs-dark"><code class="language-processing hljs"><span class="hljs-comment line-number">1.</span><span class="hljs-keyword">void</span> <span class="hljs-title">draw</span>(){<br><span class="hljs-comment line-number">2.</span>    <span class="hljs-built_in">translate</span>(<span class="hljs-variable">width</span> / <span class="hljs-number">2</span>, <span class="hljs-variable">height</span> / <span class="hljs-number">2</span>);<br><span class="hljs-comment line-number">3.</span>    <span class="hljs-comment">// 获取颜色</span><br><span class="hljs-comment line-number">4.</span>    <span class="hljs-built_in">int</span> c = ac.getColor();<br><span class="hljs-comment line-number">5.</span>    <span class="hljs-built_in">fill</span>(c);<br><span class="hljs-comment line-number">6.</span>    <span class="hljs-built_in">ellipse</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">300</span>, <span class="hljs-number">300</span>);<br><span class="hljs-comment line-number">7.</span>}<br></code></pre>
+```processing
+void draw() {
+    // 获取图像
+    img = ac.getCameraImage();
+    image(img, 0, 0);
+}
+```
+```processing
+void draw(){
+    translate(width / 2, height / 2);
+    // 获取颜色
+    int c = ac.getColor();
+    fill(c);
+    ellipse(0, 0, 300, 300);
+}
+
+```
 
 至此 **PAndroidCamera** 类的功能就介绍完毕，具体效果在后面的实例中查看。
 
@@ -86,13 +119,58 @@ title: 一个Processing与Android交互的库
 ---
 #### 使用步骤
 1. 导包
- <pre class="prettyprint hljs-dark"><code class="language-processing hljs"><span class="hljs-comment line-number">1.</span><span class="hljs-comment">// 导包</span><br><span class="hljs-comment line-number">2.</span><span class="hljs-keyword">import</span> com.onlylemi.processing.android.capture.*;<br></code></pre>
+```processing
+// 导包
+import com.onlylemi.processing.android.capture.*;
+```
 2. 声明（**PAndroidSensor类**）
- <pre class="prettyprint hljs-dark"><code class="language-processing hljs"><span class="hljs-comment line-number">1.</span><span class="hljs-comment">// 声明</span><br><span class="hljs-comment line-number">2.</span>PAndroidSensor as;<br></code></pre>
+```processing
+// 声明
+PAndroidSensor as;
+```
 3. 在**setup**函数中初始化，并且开启数据捕捉
- <pre class="prettyprint hljs-dark"><code class="language-processing hljs"><span class="hljs-comment line-number">1.</span><span class="hljs-keyword">void</span> <span class="hljs-title">setup</span>() {<br><span class="hljs-comment line-number">2.</span>    <span class="hljs-built_in">size</span>(<span class="hljs-number">720</span>, <span class="hljs-number">480</span>);<br><span class="hljs-comment line-number">3.</span>    <span class="hljs-built_in">background</span>(<span class="hljs-number">0</span>);<br><span class="hljs-comment line-number">4.</span>    <span class="hljs-comment">// 初始化对象</span><br><span class="hljs-comment line-number">5.</span>    <span class="hljs-comment">// 参数含义： 0 获取数据速率</span><br><span class="hljs-comment line-number">6.</span>    as = <span class="hljs-keyword">new</span> PAndroidSensor(<span class="hljs-number">0</span>);<br><span class="hljs-comment line-number">7.</span>    as.start();<br><span class="hljs-comment line-number">8.</span>}<br></code></pre>
+```processing
+void setup() {
+    size(720, 480);
+    background(0);
+    // 初始化对象
+    // 参数含义： 0 获取数据速率
+    as = new PAndroidSensor(0);
+    as.start();
+}
+```
 4. 在**draw**函数中调用相应函数进行数据获取（每种传感器数据获得都有两种方式）
- <pre class="prettyprint hljs-dark"><code class="language-processing hljs"><span class="hljs-comment line-number">1.</span><span class="hljs-keyword">void</span> <span class="hljs-title">draw</span>() {<br><span class="hljs-comment line-number">2.</span>    <span class="hljs-built_in">background</span>(<span class="hljs-number">0</span>);<br><span class="hljs-comment line-number">3.</span>    <span class="hljs-built_in">fill</span>(<span class="hljs-number">255</span>);<br><span class="hljs-comment line-number">4.</span>    <span class="hljs-built_in">textSize</span>(<span class="hljs-number">15</span>);<br><span class="hljs-comment line-number">5.</span>    <span class="hljs-comment">// 每种传感器都有两种方法获取数据</span><br><span class="hljs-comment line-number">6.</span>    <span class="hljs-built_in">float</span>[] values1 = as.getAccelerometerSensorValues();<br><span class="hljs-comment line-number">7.</span>    <span class="hljs-built_in">float</span>[] values1 = as.getSensorValues(PSensorType.TYPE_ACCELEROMETER);<br><span class="hljs-comment line-number">8.</span><br><span class="hljs-comment line-number">9.</span>    <span class="hljs-built_in">float</span>[] values2 = as.getOrientationSensorValues();<br><span class="hljs-comment line-number">10.</span>    <span class="hljs-built_in">float</span>[] values2 = as.getSensorValues(PSensorType.TYPE_ORIENTATION);<br><span class="hljs-comment line-number">11.</span><br><span class="hljs-comment line-number">12.</span>    <span class="hljs-built_in">float</span>[] values3 = as.getMagneticFieldSensorValues();<br><span class="hljs-comment line-number">13.</span>    <span class="hljs-built_in">float</span>[] values3 = as.getSensorValues(PSensorType.TYPE_MAGNETIC_FIELD);<br><span class="hljs-comment line-number">14.</span><br><span class="hljs-comment line-number">15.</span>    <span class="hljs-built_in">float</span>[] values4 = as.getGyroscopeSensorValues();<br><span class="hljs-comment line-number">16.</span>    <span class="hljs-built_in">float</span>[] values4 = as.getSensorValues(PSensorType.TYPE_GYROSCOPE);<br><span class="hljs-comment line-number">17.</span><br><span class="hljs-comment line-number">18.</span>    <span class="hljs-built_in">float</span> values5 = as.getLightSensorValues();<br><span class="hljs-comment line-number">19.</span>    <span class="hljs-built_in">float</span> values5 = as.getSensorValues(PSensorType.TYPE_LIGHT)[<span class="hljs-number">0</span>];<br><span class="hljs-comment line-number">20.</span><br><span class="hljs-comment line-number">21.</span>    <span class="hljs-built_in">float</span> values6 = as.getProximitySensorValues();<br><span class="hljs-comment line-number">22.</span>    <span class="hljs-built_in">float</span> values6 = as.getSensorValues(PSensorType.TYPE_PROXIMITY)[<span class="hljs-number">0</span>];<br><span class="hljs-comment line-number">23.</span><br><span class="hljs-comment line-number">24.</span>    <span class="hljs-built_in">float</span> values7 = as.getPressureSensorValues();<br><span class="hljs-comment line-number">25.</span>    <span class="hljs-built_in">float</span>[] values7 = as.getSensorValues(PSensorType.TYPE_PRESSURE);<br><span class="hljs-comment line-number">26.</span><br><span class="hljs-comment line-number">27.</span>    <span class="hljs-built_in">float</span> values8 = as.getTemperatureSensorValues();<br><span class="hljs-comment line-number">28.</span>    <span class="hljs-built_in">float</span> values8 = as.getSensorValues(PSensorType.TYPE_TEMPERATURE);<br><span class="hljs-comment line-number">29.</span>}<br></code></pre>
+```processing
+void draw() {
+    background(0);
+    fill(255);
+    textSize(15);
+    // 每种传感器都有两种方法获取数据
+    float[] values1 = as.getAccelerometerSensorValues();
+    float[] values1 = as.getSensorValues(PSensorType.TYPE_ACCELEROMETER);
+
+    float[] values2 = as.getOrientationSensorValues();
+    float[] values2 = as.getSensorValues(PSensorType.TYPE_ORIENTATION);
+
+    float[] values3 = as.getMagneticFieldSensorValues();
+    float[] values3 = as.getSensorValues(PSensorType.TYPE_MAGNETIC_FIELD);
+
+    float[] values4 = as.getGyroscopeSensorValues();
+    float[] values4 = as.getSensorValues(PSensorType.TYPE_GYROSCOPE);
+
+    float values5 = as.getLightSensorValues();
+    float values5 = as.getSensorValues(PSensorType.TYPE_LIGHT)[0];
+
+    float values6 = as.getProximitySensorValues();
+    float values6 = as.getSensorValues(PSensorType.TYPE_PROXIMITY)[0];
+
+    float values7 = as.getPressureSensorValues();
+    float[] values7 = as.getSensorValues(PSensorType.TYPE_PRESSURE);
+
+    float values8 = as.getTemperatureSensorValues();
+    float values8 = as.getSensorValues(PSensorType.TYPE_TEMPERATURE);
+}
+```
  
 至此 **PAndroidSensor** 类的功能就介绍完毕，具体效果在后面的实例中查看。
 
