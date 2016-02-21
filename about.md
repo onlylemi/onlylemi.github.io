@@ -14,34 +14,34 @@ permalink: /about/
 
 
 ### Experience
-* **Android lab workshop in Winter, 2016**
-	[Android Lab of NUC](https://github.com/android-nuc/AndroidTrian_InWinter)
+* **Android lab workshop in Winter, 2016**  
+	[Android Lab of NUC](https://github.com/android-nuc/AndroidTrian_InWinter)  
 	2016.01.21 - 2016.01.26
-* **AndroidCapture for Processing**
+* **AndroidCapture for Processing**  
 	This library tries to transfer data(Android Camera&Sensors) between Processing and Android.
-	[Latest Release 2.0](https://github.com/onlylemi/processing-android-capture/releases/tag/latest)
+	[Latest Release 2.0](https://github.com/onlylemi/processing-android-capture/releases/tag/latest)  
 	2015.12 - 2016.01
-* **The leader of Android innovation Laboratory**
-	[North University of China](http://www.nuc.edu.cn/)
+* **The leader of Android innovation Laboratory**  
+	[North University of China](http://www.nuc.edu.cn/)  
 	2015.06 - Now
-* **Software Engineer and contact some of the best artists about creative coding**
-	[OF COURSE](http://www.ofcourse.io)
+* **Software Engineer and contact some of the best artists about creative coding**  
+	[OF COURSE](http://www.ofcourse.io)  
 	2015.04 - Now
-* **Wechat Printer with QRCode  and ARM**
-	College Students Innovation and Entrepreneurship project in 2015
+* **Wechat Printer with QRCode  and ARM**  
+	College Students Innovation and Entrepreneurship project in 2015  
 	2014.12 - 2015.12
-* **Android APP of Navigation  in Indoors**
-	National first prize
-	At Computer application contest in five provinces of North China in 2015
+* **Android APP of Navigation  in Indoors**  
+	National first prize  
+	At Computer application contest in five provinces of North China in 2015  
 	2015.05 - 2015.12
-* **Intermediate Engineer in Sina Cloud**
-	[Sina App Engine](http://www.sinacloud.com/sae.html)
-	2014.12 - Now
-* **Color, a Android Game App**
-	National second prize at Computer application contest in five provinces of North China in 2014
-	First prize at LiuDing Cup in North University of China 
+* **Intermediate Engineer in Sina Cloud**  
+	[Sina App Engine](http://www.sinacloud.com/sae.html)  
+	2014.12 - Now  
+* **Color, a Android Game App**  
+	National second prize at Computer application contest in five provinces of North China in 2014  
+	First prize at LiuDing Cup in North University of China  
 	2014.05 - 2014.12
-* **Robot named ZhiYou 6**
-	Winning award 
-	At China robot and RocoCup open competition, 2014
+* **Robot named ZhiYou 6**  
+	Winning award  
+	At China robot and RocoCup open competition, 2014  
 	2014.04 - 2014.09
