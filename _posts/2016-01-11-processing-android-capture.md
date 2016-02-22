@@ -1,6 +1,10 @@
 ---
 layout: post
 title: 一个Processing与Android交互的库
+permalink: projects/processing-android-capture/
+category: projects
+tags: [android, processing]
+excerpt: processing-android-capture
 ---
 
 ***Jan 11, 2016***
@@ -19,30 +23,31 @@ title: 一个Processing与Android交互的库
 
 另外，大家都知道在**processing**里可以写程序直接采用**android-mode**执行，只要你的电脑中有**android-sdk**，就可以在android手机上运行，但是大家觉得运行效果如何呢？我只想说还能不能再卡点呀，本来一幅优美的画面，硬生生的给你放成慢动作，还是超慢动作啊。另外，**[processing foundation](https://github.com/processing)** 对 **[processing-android](https://github.com/processing/processing-android)** 的维护的又很少，所以性能也就不是很令人满意。但是，作为一名android开发者，我认为android手机是个很好的东西啊，凭借它有丰富的**传感器**、**摄像头（本文的库就是干）**、**画板**以及它的可移动、灵活的特点，既然让它本身执行processing很卡，那为何不让它解放出来，只从它上获取数据，把数据交给processing pc端做处理呢？
 
->  12月13日下午1点-3点，来自财新数据可视化实验室的执行总监**[任远老师](http://yuanren.cc/)**在**[OF COURSE](http://www.ofcourse.io/)**给大家进行[Live Coding+Music Visualization](http://e.vhall.com/686423389)现场表演！期间，任远老师在做视频和音乐的互动时，即兴的将观众融入到了作品中，用手机将现场的观众录制下来，然后将录制的视频进行播放，通过摄像头和音乐进行了实时的互动，观众成为了**live coding**的一部分，同时观众也参与了作品的创作。live coding并不是我一个人在写code，而是大家和我一起完成code。 在这个环节中手机正好可以当做这个媒介，如果我可以拿着手机把手机拍摄到的画面可以实时传到processing中处理，而不是先在现场录制一段视屏然后再播放处理这样效果是不是更好呢?
+> # adw 
+12月13日下午1点-3点，来自财新数据可视化实验室的执行总监**[任远老师](http://yuanren.cc/)**在**[OF COURSE](http://www.ofcourse.io/)**给大家进行[Live Coding+Music Visualization](http://e.vhall.com/686423389)现场表演！期间，任远老师在做视频和音乐的互动时，即兴的将观众融入到了作品中，用手机将现场的观众录制下来，然后将录制的视频进行播放，通过摄像头和音乐进行了实时的互动，观众成为了**live coding**的一部分，同时观众也参与了作品的创作。live coding并不是我一个人在写code，而是大家和我一起完成code。 在这个环节中手机正好可以当做这个媒介，如果我可以拿着手机把手机拍摄到的画面可以实时传到processing中处理，而不是先在现场录制一段视屏然后再播放处理这样效果是不是更好呢?
 
 正因为如此，我就决定开发一个processing和android交互的库，供大家来使用，同时，**作为一个只用processing从来就没给foundation捐赠过的人，写这样一个lib来为社区做点贡献，这样心里应该会好过点吧。。。**
 
 就这样这个库诞生了。我称它为**processing-android-capture**。**capture**包括**android camera、sensor**。
 
-废话不多说了，先看看Android App界面，然后给大家撸代码讲解。
+废话不多说了，先看看Android App界面，然后给大家撸代码讲解。  
 
 ## Android APP
-![androidcapture1](https://raw.githubusercontent.com/onlylemi/AndroidCapture/master/androidcapture1.jpg)
+![androidcapture1](https://raw.githubusercontent.com/onlylemi/AndroidCapture/master/androidcapture1.jpg)  
 Δ  android客户端 首页
 
-![androidcapture1](https://raw.githubusercontent.com/onlylemi/AndroidCapture/master/androidcapture2.jpg)
+![androidcapture1](https://raw.githubusercontent.com/onlylemi/AndroidCapture/master/androidcapture2.jpg)  
 Δ  android客户端 登录服务器界面（地址为processing 服务端的本地ip地址，pc端cmd进入命令行模式，输入ipconfig即可查看）
 
-![androidcapture1](https://raw.githubusercontent.com/onlylemi/AndroidCapture/master/androidcapture3.jpg)
+![androidcapture1](https://raw.githubusercontent.com/onlylemi/AndroidCapture/master/androidcapture3.jpg)  
 Δ  android客户端 颜色识别界面
 
-![androidcapture1](https://raw.githubusercontent.com/onlylemi/AndroidCapture/master/androidcapture4.jpg)
+![androidcapture1](https://raw.githubusercontent.com/onlylemi/AndroidCapture/master/androidcapture4.jpg)  
 Δ  android客户端 传感器选择界面
 
 ## 使用方法
 1. 首先你需要在github上去下载processing-android-capture.jar及android客户端app  
-**android app豌豆荚地址：**wandoujia.com/apps/com.onlylemi.android.capture)
+**android app豌豆荚地址：**[http://wandoujia.com/apps/com.onlylemi.android.capture](http://wandoujia.com/apps/com.onlylemi.android.capture))
 2. 在手机上安装app，processing项目中导入jar包到code文件夹下
 3. pde文件中调用。一下分为`camera`、`sensor`两种情况进行阐释
 
@@ -54,19 +59,22 @@ title: 一个Processing与Android交互的库
 ---
 #### 使用步骤
 1、导包
+
 ```java
 // 导包
 import com.onlylemi.processing.android.capture.*;
 ```
 2、声明（**PAndroidCamera类**）
+
 ```java
 // 声明
 PAndroidCamera ac;
 PImage img;
 ```
 3、在**setup**函数中初始化，并且开启捕捉
+
 ```java
- void setup() {
+void setup() {
     size(720, 480);
     // 初始化对象
     // 参数含义： width 图像的宽
@@ -77,6 +85,7 @@ PImage img;
 };
 ```
 4、在**draw**函数中调用**getCameraImage()**函数获取图像
+
 ```java
 void draw() {
     // 获取图像
@@ -118,17 +127,20 @@ void draw(){
 ---
 #### 使用步骤
 1、导包
-```processing
+
+```java
 // 导包
 import com.onlylemi.processing.android.capture.*;
 ```
 2、声明（**PAndroidSensor类**）
-```processing
+
+```java
 // 声明
 PAndroidSensor as;
 ```
 3、在**setup**函数中初始化，并且开启数据捕捉
-```processing
+
+```java
 void setup() {
     size(720, 480);
     background(0);
@@ -139,7 +151,8 @@ void setup() {
 }
 ```
 4、在**draw**函数中调用相应函数进行数据获取（每种传感器数据获得都有两种方式）
-```processing
+
+```java
 void draw() {
     background(0);
     fill(255);
@@ -147,7 +160,7 @@ void draw() {
     // 每种传感器都有两种方法获取数据
     float[] values1 = as.getAccelerometerSensorValues();
     float[] values1 = as.getSensorValues(PSensorType.TYPE_ACCELEROMETER);
-
+    
     float[] values2 = as.getOrientationSensorValues();
     float[] values2 = as.getSensorValues(PSensorType.TYPE_ORIENTATION);
 

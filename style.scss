@@ -18,60 +18,22 @@ html {
 }
 
 body {
-	background: $white;
+  background: $white;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
+  max-width: 900px;
   padding: 0 10px;
   width: 100%;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
-  color: $darkerGray;
-  font-weight: bold;
-
-  line-height: 1.7;
-  margin: 1em 0 15px;
-  padding: 0;
-
-  @include mobile {
-    line-height: 1.4;
-  }
-}
-
-h1 {
-  font-size: 30px;
-  a {
-    color: inherit;
-  }
-}
-
-h2 {
-  font-size: 24px;
-}
-
-h3 {
-  font-size: 20px;
-}
-
-h4 {
-  font-size: 18px;
-  color: $gray;
-}
-
-p {
-  margin: 15px 0;
 }
 
 a {
   color: $blue;
   text-decoration: none;
-	cursor: pointer;
+  cursor: pointer;
   &:hover, &:active {
     color: $blue;
   }
@@ -121,25 +83,26 @@ img {
 }
 
 // Specify the color of the selection
-::-moz-selection {
+/*::-moz-selection {
   color: $black;
   background: $lightGray;
 }
+
 ::selection {
   color: $black;
   background: $lightGray;
-}
+}*/
 
 // Nicolas Gallagher's micro clearfix hack
 // http://nicolasgallagher.com/micro-clearfix-hack/
 .clearfix:before,
 .clearfix:after {
-    content: " ";
-    display: table;
+  content: " ";
+  display: table;
 }
 
 .clearfix:after {
-    clear: both;
+  clear: both;
 }
 
 /*********************/
@@ -195,13 +158,23 @@ img {
   color: $darkGray;
   cursor: pointer;
   font-family: $helveticaNeue;
-  font-weight: 300;
+  font-weight: bold;
   font-size: 28px;
   letter-spacing: 1px;
+
+  a {
+    color: #000;
+  }
+
+  a:hover,
+  a:focus {
+    color: $blue;
+    text-decoration: none;
+  }
 }
 
 .site-description {
-  margin: -5px 0 0 0;
+  margin: -2px 0 0 0;
   color: $gray;
   font-size: 16px;
 
@@ -225,9 +198,9 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $darkGray;
+    color: #000;
     text-align: right;
-    font-weight: 300;
+    font-weight: bold;
     letter-spacing: 1px;
 
     @include mobile {
@@ -235,14 +208,24 @@ nav {
       color: $blue;
     }
   }
+
+  a:hover,
+  a:focus {
+    color: $blue;
+  }
 }
 
 //
 // .main
 //
+.page > h1,
+.posts > h1 {
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
 
 .posts > .post {
-  padding-bottom: 2em;
+  padding-bottom: 1em;
   border-bottom: 1px solid $lightGray;
 }
 
@@ -252,14 +235,14 @@ nav {
 }
 
 .post {
-  blockquote {
+  /*blockquote {
     margin: 1.8em .8em;
     border-left: 2px solid $gray;
     padding: 0.1em 1em;
     color: $gray;
     font-size: 22px;
     font-style: italic;
-  }
+  }*/
 
   .comments {
     margin-top: 50px;

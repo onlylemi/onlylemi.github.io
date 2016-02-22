@@ -10,11 +10,10 @@
     <![endif]-->
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css"/>
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/marxico.css"/>
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}"
           href="{{ site.baseurl }}/feed.xml"/>
     <link rel="shortcut icon" type="image/ico" href="{{ site.avatar }}"/>
-
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
 </head>
 
 <body>
@@ -24,14 +23,15 @@
             <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}"/></a>
 
             <div class="site-info">
-                <h1 class="site-name"><strong><a href="{{ site.baseurl }}/">{{ site.name }}</a></strong></h1>
+                <p class="site-name"><strong><a href="{{ site.baseurl }}/">{{ site.name }}</a></strong></p>
                 <p class="site-description">{{ site.description }}</p>
             </div>
 
             <nav>
-                <a href="{{ site.baseurl }}/about">About</a>
-                <a href="{{ site.baseurl }}/projects">Projects</a>
-                <a href="{{ site.baseurl }}/resume">Resume</a>
+                <strong><a href="{{ site.baseurl }}/about">About</a></strong>
+                <strong><a href="{{ site.baseurl }}/blog">Blog</a></strong>
+                <strong><a href="{{ site.baseurl }}/projects">Projects</a></strong>
+                <strong><a href="{{ site.baseurl }}/resume">Resume</a></strong>
             </nav>
         </header>
     </div>

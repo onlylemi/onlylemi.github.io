@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<div class="posts">
+    <h1>Blogs...</h1>
+    {% for post in site.posts %}
+    {% if post.category == 'blog' %}
+    <article class="post">
+
+        <h5>{{ post.date | date: "%b %d, %Y" }} — <strong><a href="{{ site.baseurl }}{{ post.url }}">{{
+            post.title }}</a></strong>
+        </h5>
+
+        <!--<div class="entry">
+          {{ post.excerpt }}
+        </div>
+
+        <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>-->
+
+    </article>
+    {% endif %}
+    {% endfor %}
+</div>
