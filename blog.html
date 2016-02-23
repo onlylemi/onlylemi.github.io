@@ -1,11 +1,15 @@
 ---
 layout: default
+title: Blog
+permalink: /blog/
 ---
 
 <div class="posts">
-    <h1>Writing...</h1>
-    {% for post in site.posts limit: 15 %}
+    <h1>Blogs...</h1>
+    {% for post in site.posts %}
+    {% if post.category == 'blog' %}
     <article class="post">
+
         <h5>
             {% include post/category.html %}
 
@@ -14,6 +18,8 @@ layout: default
             <p class="br-screen"></p>
             {% include post/tag.html %}
         </h5>
+
     </article>
+    {% endif %}
     {% endfor %}
 </div>

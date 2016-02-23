@@ -1,19 +1,25 @@
 ---
 layout: default
+title: Translate
+permalink: /translate/
 ---
 
 <div class="posts">
-    <h1>Writing...</h1>
-    {% for post in site.posts limit: 15 %}
+    <h1>Translate...</h1>
+    {% for post in site.posts %}
+    {% if post.category == 'translate' %}
     <article class="post">
+
         <h5>
             {% include post/category.html %}
 
-            {% include post/date.html %} - {% include post/title.html %}
+            {% include post/date.html %} - {% include post/date.html %}
 
             <p class="br-screen"></p>
             {% include post/tag.html %}
         </h5>
+
     </article>
+    {% endif %}
     {% endfor %}
 </div>

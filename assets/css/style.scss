@@ -115,11 +115,12 @@ img {
 
 .wrapper-masthead {
   margin-bottom: 50px;
+  border-top: 5px solid #262b3b;
 }
 
 .masthead {
   padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 2px solid $lightGray;
 
   @include mobile {
     text-align: center;
@@ -218,9 +219,10 @@ nav {
 //
 // .main
 //
+
 .page > h1,
 .posts > h1 {
-  margin-top: 2em;
+  margin-top: 1em;
   margin-bottom: 1em;
 }
 
@@ -234,24 +236,16 @@ nav {
   border-bottom: none;
 }
 
+.page,
 .post {
-  /*blockquote {
-    margin: 1.8em .8em;
-    border-left: 2px solid $gray;
-    padding: 0.1em 1em;
-    color: $gray;
-    font-size: 22px;
-    font-style: italic;
-  }*/
 
+  .comments-dialog
   .comments {
     margin-top: 50px;
   }
 
-  .read-more {
-    text-transform: uppercase;
-    font-size: 15px;
-  }
+
+
 }
 
 .wrapper-footer {
@@ -259,6 +253,10 @@ nav {
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   background-color: $lightGray;
+
+  P {
+    text-align: center;
+  }
 }
 
 footer {

@@ -10,5 +10,10 @@ layout: default
     {{ content }}
   </div>
 
-  {% include disqus.html %}
+  {% if site.disqus %}
+  <div id="comments" class="comments">
+    <h2>Messages</h2>
+    {% include disqus.html %}
+  </div>
+  {% endif %}
 </article>

@@ -9,18 +9,39 @@
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css"/>
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/marxico.css"/>
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/onlylemi.css"/>
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}"
           href="{{ site.baseurl }}/feed.xml"/>
-    <link rel="shortcut icon" type="image/ico" href="{{ site.avatar }}"/>
+    <link rel="shortcut icon" type="image/ico" href="{{ site.baseurl }}{{ site.avatar }}"/>
+
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/jquery-2.2.1.min.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/bootstrap3-typeahead.min.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/onlylemi.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function(){
+                /* scroll top down */
+                $(".js-scroll-top").click(function(){
+                        $("html,body").animate({scrollTop:$("#wrapper-masthead").offset().top},1000)
+                        });
+                $(".js-scroll-comment").click(function(){
+                        $("html,body").animate({scrollTop:$("#comments").offset().top},1000)
+                        });
+                $(".js-scroll-down").click(function(){
+                        $("html,body").animate({scrollTop:$("#wrapper-footer").offset().top},1000)
+                        });
+                });
+    </script>
 </head>
 
 <body>
-<div class="wrapper-masthead">
+<div id="wrapper-masthead" class="wrapper-masthead">
     <div class="container">
         <header class="masthead clearfix">
-            <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}"/></a>
+            <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.baseurl }}{{ site.avatar }}"/></a>
 
             <div class="site-info">
                 <p class="site-name"><strong><a href="{{ site.baseurl }}/">{{ site.name }}</a></strong></p>
@@ -39,13 +60,50 @@
 
 <div id="main" role="main" class="container">
     {{ content }}
+    <!-- sidebar for scroll top-bottom -->
+    <div class="scroll-top-down">
+        <div class="js-scroll-top" title="Top">
+	        <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-chevron-circle-up fa-stack-1x fa-inverse"></i>
+            </span>
+        </div>
+        <div class="search-btn" title="Search">
+	        <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-search fa-stack-1x fa-inverse"></i>
+            </span>
+        </div>
+        <div class="js-scroll-list" title="Directory">
+            <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-bars fa-stack-1x fa-inverse"></i>
+            </span>
+        </div>
+        <div class="js-scroll-comment" title="Comment">
+	        <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-comments fa-stack-1x fa-inverse"></i>
+            </span>
+        </div>
+        <div class="js-scroll-down" title="Bottom">
+	        <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-chevron-circle-down fa-stack-1x fa-inverse"></i>
+            </span>
+        </div>
+    </div>
 </div>
 
-<div class="wrapper-footer">
+{% include search.html %}
+
+<!-- footer -->
+<div id="wrapper-footer" class="wrapper-footer">
     <div class="container">
         <footer class="footer">
             {% include svg-icons.html %}
         </footer>
+        <p>&copy;2016 <a href="onlylemi.com" target="_blank">Jianbin Qi</a>. All rights reserved.</p>
     </div>
 </div>
 

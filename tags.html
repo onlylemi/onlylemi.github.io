@@ -1,0 +1,28 @@
+---
+layout: default
+title: Tags
+permalink: /tags/
+---
+
+<div class="posts">
+    <h1>Tags...</h1>
+    {% for tag in site.tags %}
+    <a class="btn btn-default btn-xs tag-color-{{ tag[0] }}" href="#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a>
+    {% endfor %}
+
+    {% for tag in site.tags %}
+    <hr>
+    <h4 id="{{ tag[0] }}" href="{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}"><a href="#{{ tag[0] }}" title="{{ tag[0] }}"><i class="font-icons fa fa-tag"></i>{{ tag[0] }}</a></h4>
+    </p>
+    {% for post in tag[1] %}
+    <h5>
+        {% include post/category.html %}
+
+        {% include post/date.html %} - {% include post/title.html %}
+
+        <p class="tags">{% include post/tag.html %}</p>
+
+    </h5>
+    {% endfor %}
+    {% endfor %}
+</div>

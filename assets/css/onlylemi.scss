@@ -458,16 +458,69 @@ blockquote {
   }
 }
 
-span {
-  font-family: Consolas;
-  padding: 2px;
-  border-radius: 4px;
-  margin-top: 3px;
-  .red {
-    color: #f00;
+/***** sidebar for scroll top-bottom ******/
+
+.scroll-top-down {
+  width: 75px;
+  position: fixed;
+  top: 40%;
+  right: -5px;
+  text-align: center;
+  z-index: 2222;
+}
+
+.scroll-top-down div {
+  margin-bottom: 5px;
+  color: black;
+}
+
+.scroll-top-down i {
+  cursor: pointer;
+}
+
+.scroll-top-down div:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.tags {
+  display: inline-block;
+
+  @media screen and (max-width: 600px) {
+    display: none;
   }
-  .green {
-    color: #0f0;
-    color: #00f;
+}
+
+
+.br-screen,
+.tags {
+  display: inline-block;
+}
+
+@media screen and (max-width: 600px) {
+  .br-screen{
+    display: inherit;
   }
+  .tags{
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 750px) {
+  .scroll-top-down {
+    right: -10px;
+  }
+  .scroll-top-down div {
+    color: rgba(0, 0, 0, 0.4);
+  }
+}
+
+.font-icons {
+  margin: auto 5px;
+}
+
+
+
+.tag-color-android {
+
 }

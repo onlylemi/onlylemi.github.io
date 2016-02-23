@@ -1,0 +1,4 @@
+{% for tag in post.tags %}
+<button class="btn btn-default btn-xs tag-color-{{ tag }}" type="button" data-toggle="tooltip" data-placement="top" href="/tags/#{{ tag }}"
+   title="{{ tag }}">{{ tag }}</button>
+{% endfor %}

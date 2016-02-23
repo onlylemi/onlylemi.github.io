@@ -1,0 +1,7 @@
+{% if post.category == 'projects' %}
+<a href="{{ site.baseurl }}/{{ post.category }}/" data-toggle="tooltip" data-placement="top" title="{{ post.category }}"><i class="font-icons fa fa-github"></i></a>
+{% elsif post.category == 'translate' %}
+<a href="{{ site.baseurl }}/{{ post.category }}/" data-toggle="tooltip" data-placement="top" title="{{ post.category }}"><i class="font-icons fa fa-rss"></i></a>
+{% else %}
+<a href="{{ site.baseurl }}/{{ post.category }}/" data-toggle="tooltip" data-placement="top" title="{{ post.category }}"><i class="font-icons fa fa-pencil-square-o"></i></a>
+{% endif %}

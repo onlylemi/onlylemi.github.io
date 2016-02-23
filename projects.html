@@ -1,0 +1,22 @@
+---
+layout: default
+title: Projects
+permalink: /projects/
+---
+
+<div class="posts">
+    <h1>Projects...</h1>
+    {% for post in site.posts %}
+    {% if post.category == 'projects' %}
+    <article class="post">
+
+        <h5><i class="font-icons fa fa-calendar"></i>: <em>{% include post/date.html %}</em></h5>
+        <h5><i class="font-icons fa fa-github"></i>: {% include post/title.html %}</strong>
+            {% include post/tag.html %}
+        </h5>
+        <h5><i class="font-icons fa fa-exclamation-circle"></i>: <strong>{{ post.excerpt }}</strong></h5>
+
+    </article>
+    {% endif %}
+    {% endfor %}
+</div>

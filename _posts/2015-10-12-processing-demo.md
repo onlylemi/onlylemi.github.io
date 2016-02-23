@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Processing Demo
-category: blog
+permalink: translate/processing-demo/
+category: translate
 tags: [processing]
 ---
 

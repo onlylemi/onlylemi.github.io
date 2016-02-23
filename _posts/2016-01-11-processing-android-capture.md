@@ -7,8 +7,6 @@ tags: [android, processing]
 excerpt: processing-android-capture
 ---
 
-***Jan 11, 2016***
-
 # processing-android-capture
 
 ## Lib介绍
@@ -19,7 +17,7 @@ excerpt: processing-android-capture
 
 可是它的效果不得不佩服呀，简单的几句代码就可以勾勒出一幅优美的画面，做**可视化（我最喜欢做的）**又是如此方便，所以就拿processing玩起来了。前段时间做的一个**室内地磁导航app**，在给大家讲地磁导航原理的时候讲了又讲，可是大家就是不明白，最后用做了一个简单地磁导航原理模拟动画，大家瞬间明白。在不断的尝试后，越来越喜欢这门语言，现在一有空就会拿出来玩玩。**手握程序，不仅可以写应用，还可以娱乐、画画，真是给程序猿枯燥的生活添加了一笔别样的色彩（“一只不务正业的程序猿”就这样来了）**。哈哈，程序猿也不是你想的那样无趣的，这样的多好啊！
 
-![室内导航原理模型](http://upload-images.jianshu.io/upload_images/1404917-3be948fb081b9da6.gif?imageMogr2/auto-orient/strip)
+![室内导航原理模型](https://raw.githubusercontent.com/onlylemi/processing-android-capture/master/androidcapture8.gif)
 
 另外，大家都知道在**processing**里可以写程序直接采用**android-mode**执行，只要你的电脑中有**android-sdk**，就可以在android手机上运行，但是大家觉得运行效果如何呢？我只想说还能不能再卡点呀，本来一幅优美的画面，硬生生的给你放成慢动作，还是超慢动作啊。另外，**[processing foundation](https://github.com/processing)** 对 **[processing-android](https://github.com/processing/processing-android)** 的维护的又很少，所以性能也就不是很令人满意。但是，作为一名android开发者，我认为android手机是个很好的东西啊，凭借它有丰富的**传感器**、**摄像头（本文的库就是干）**、**画板**以及它的可移动、灵活的特点，既然让它本身执行processing很卡，那为何不让它解放出来，只从它上获取数据，把数据交给processing pc端做处理呢？
 
