@@ -6,6 +6,13 @@
  */
 
  $(document).ready(function () {
+
+
+        $('#toc').toc();
+
+
+
+        /* search */
         var time1 = 0;
         var show = false;
         var names = new Array(); //文章名字等
@@ -45,7 +52,8 @@
                     } else {
                         $('.search-dialog').modal('show')
                         $("#search-content").val("");
-                        window.setTimeout("$('#search-content').focus();", 500);
+                        $('#search-content').focus();
+                        //window.setTimeout("$('#search-content').focus();", 500);
 
                     }
                     time1 = 0;

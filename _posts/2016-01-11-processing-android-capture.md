@@ -21,8 +21,7 @@ excerpt: processing-android-capture
 
 另外，大家都知道在**processing**里可以写程序直接采用**android-mode**执行，只要你的电脑中有**android-sdk**，就可以在android手机上运行，但是大家觉得运行效果如何呢？我只想说还能不能再卡点呀，本来一幅优美的画面，硬生生的给你放成慢动作，还是超慢动作啊。另外，**[processing foundation](https://github.com/processing)** 对 **[processing-android](https://github.com/processing/processing-android)** 的维护的又很少，所以性能也就不是很令人满意。但是，作为一名android开发者，我认为android手机是个很好的东西啊，凭借它有丰富的**传感器**、**摄像头（本文的库就是干）**、**画板**以及它的可移动、灵活的特点，既然让它本身执行processing很卡，那为何不让它解放出来，只从它上获取数据，把数据交给processing pc端做处理呢？
 
-> # adw 
-12月13日下午1点-3点，来自财新数据可视化实验室的执行总监**[任远老师](http://yuanren.cc/)**在**[OF COURSE](http://www.ofcourse.io/)**给大家进行[Live Coding+Music Visualization](http://e.vhall.com/686423389)现场表演！期间，任远老师在做视频和音乐的互动时，即兴的将观众融入到了作品中，用手机将现场的观众录制下来，然后将录制的视频进行播放，通过摄像头和音乐进行了实时的互动，观众成为了**live coding**的一部分，同时观众也参与了作品的创作。live coding并不是我一个人在写code，而是大家和我一起完成code。 在这个环节中手机正好可以当做这个媒介，如果我可以拿着手机把手机拍摄到的画面可以实时传到processing中处理，而不是先在现场录制一段视屏然后再播放处理这样效果是不是更好呢?
+> 12月13日下午1点-3点，来自财新数据可视化实验室的执行总监**[任远老师](http://yuanren.cc/)**在**[OF COURSE](http://www.ofcourse.io/)**给大家进行[Live Coding+Music Visualization](http://e.vhall.com/686423389)现场表演！期间，任远老师在做视频和音乐的互动时，即兴的将观众融入到了作品中，用手机将现场的观众录制下来，然后将录制的视频进行播放，通过摄像头和音乐进行了实时的互动，观众成为了**live coding**的一部分，同时观众也参与了作品的创作。live coding并不是我一个人在写code，而是大家和我一起完成code。 在这个环节中手机正好可以当做这个媒介，如果我可以拿着手机把手机拍摄到的画面可以实时传到processing中处理，而不是先在现场录制一段视屏然后再播放处理这样效果是不是更好呢?
 
 正因为如此，我就决定开发一个processing和android交互的库，供大家来使用，同时，**作为一个只用processing从来就没给foundation捐赠过的人，写这样一个lib来为社区做点贡献，这样心里应该会好过点吧。。。**
 
@@ -45,7 +44,7 @@ excerpt: processing-android-capture
 
 ## 使用方法
 1. 首先你需要在github上去下载processing-android-capture.jar及android客户端app  
-**android app豌豆荚地址：**[http://wandoujia.com/apps/com.onlylemi.android.capture](http://wandoujia.com/apps/com.onlylemi.android.capture))
+**android app豌豆荚地址:** [http://wandoujia.com/apps/com.onlylemi.android.capture](http://wandoujia.com/apps/com.onlylemi.android.capture)
 2. 在手机上安装app，processing项目中导入jar包到code文件夹下
 3. pde文件中调用。一下分为`camera`、`sensor`两种情况进行阐释
 
@@ -55,7 +54,9 @@ excerpt: processing-android-capture
 * 获取颜色 **getColor()**
 
 ---
+
 #### 使用步骤
+
 1、导包
 
 ```java
@@ -123,7 +124,9 @@ void draw(){
 调用函数**getTemperatureSensorValues()**
 
 ---
+
 #### 使用步骤
+
 1、导包
 
 ```java
@@ -185,29 +188,26 @@ void draw() {
 至此 **PAndroidSensor** 类的功能就介绍完毕，具体效果在后面的实例中查看。
 
 ## 具体示例
-代码1：[https://github.com/onlylemi/processing-android-capture/tree/master/examples/AndroidCamera/PhoneCamera](https://github.com/onlylemi/processing-android-capture/tree/master/examples/AndroidCamera/CameraImage)
 
+代码1：[https://github.com/onlylemi/processing-android-capture/tree/master/examples/AndroidCamera/PhoneCamera](https://github.com/onlylemi/processing-android-capture/tree/master/examples/AndroidCamera/CameraImage)  
 效果1：  
 ![](https://raw.githubusercontent.com/onlylemi/processing-android-capture/master/camera_image.gif)
 
 ---
 
-代码2：[https://github.com/onlylemi/processing-android-capture/tree/master/examples/AndroidCamera/CameraColor](https://github.com/onlylemi/processing-android-capture/tree/master/examples/AndroidCamera/CameraColor)
-
+代码2：[https://github.com/onlylemi/processing-android-capture/tree/master/examples/AndroidCamera/CameraColor](https://github.com/onlylemi/processing-android-capture/tree/master/examples/AndroidCamera/CameraColor)  
 效果2：  
 ![](https://raw.githubusercontent.com/onlylemi/processing-android-capture/master/camera_color.gif)
 
 ---
 
-代码3：[https://github.com/onlylemi/processing-android-capture/tree/master/examples/AndroidCamera/AccSensor](https://github.com/onlylemi/processing-android-capture/tree/master/examples/AndroidSensor/AccSensor)
-
+代码3：[https://github.com/onlylemi/processing-android-capture/tree/master/examples/AndroidCamera/AccSensor](https://github.com/onlylemi/processing-android-capture/tree/master/examples/AndroidSensor/AccSensor)  
 效果3：  
 ![](https://raw.githubusercontent.com/onlylemi/processing-android-capture/master/sensor_color.gif)
 
 --- 
 
-代码4：[https://github.com/onlylemi/processing-android-capture/tree/master/examples/AndroidCamera/CameraMusic](https://github.com/onlylemi/processing-android-capture/tree/master/examples/AndroidCamera/CameraMusic)
-
+代码4：[https://github.com/onlylemi/processing-android-capture/tree/master/examples/AndroidCamera/CameraMusic](https://github.com/onlylemi/processing-android-capture/tree/master/examples/AndroidCamera/CameraMusic)  
 效果4：  
 ![](https://raw.githubusercontent.com/onlylemi/processing-android-capture/master/camera_music.gif)
 

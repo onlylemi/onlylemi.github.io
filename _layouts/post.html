@@ -7,7 +7,7 @@ layout: default
     <h5><i class="font-icons fa fa-calendar"></i>: <em>{{ page.date | date: "%b %d, %Y" }}</em></h5>
     <h5><i class="font-icons fa fa-tags"></i>:
         {% for tag in page.tags %}
-        <a class="tags btn btn-default btn-xs tag-color-{{ tag }}" type="button" href="/tags/#{{ tag }}"
+        <a class="btn btn-default btn-xs tag-color-{{ tag }}" type="button" href="/tags/#{{ tag }}"
            title="{{ tag }}">{{ tag }}</a>
         {% endfor %}
     </h5>

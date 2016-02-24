@@ -20,6 +20,7 @@
     <script type="text/javascript" src="{{ site.baseurl }}/assets/js/jquery-2.2.1.min.js"></script>
     <script type="text/javascript" src="{{ site.baseurl }}/assets/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="{{ site.baseurl }}/assets/js/bootstrap3-typeahead.min.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/toc.js" ></script>
     <script type="text/javascript" src="{{ site.baseurl }}/assets/js/onlylemi.js"></script>
     <script type="text/javascript">
         jQuery(document).ready(function(){
@@ -74,7 +75,7 @@
             <i class="fa fa-search fa-stack-1x fa-inverse"></i>
             </span>
         </div>
-        <div class="js-scroll-list" title="Directory">
+        <div class="js-scroll-contents" title="Contents" data-toggle="modal" data-target=".contents-dialog">
             <span class="fa-stack fa-lg">
             <i class="fa fa-circle fa-stack-2x"></i>
             <i class="fa fa-bars fa-stack-1x fa-inverse"></i>
@@ -96,6 +97,7 @@
 </div>
 
 {% include search.html %}
+{% include contents.html %}
 
 <!-- footer -->
 <div id="wrapper-footer" class="wrapper-footer">
@@ -106,6 +108,7 @@
         <p>&copy;2016 <a href="onlylemi.com" target="_blank">Jianbin Qi</a>. All rights reserved.</p>
     </div>
 </div>
+
 
 {% include analytics.html %}
 </body>
