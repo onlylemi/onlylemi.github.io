@@ -7,10 +7,19 @@
 
  $(document).ready(function () {
 
+        /* sidebar-right */
+        $(".js-scroll-top").click(function(){
+            $("html,body").animate({scrollTop:$("#wrapper-masthead").offset().top},1000)
+            });
+        $(".js-scroll-comment").click(function(){
+            $("html,body").animate({scrollTop:$("#comments").offset().top},1000)
+                });
+        $(".js-scroll-down").click(function(){
+            $("html,body").animate({scrollTop:$("#wrapper-footer").offset().top},1000)
+            });
 
+        /* contents */
         $('#toc').toc();
-
-
 
         /* search */
         var time1 = 0;
@@ -30,7 +39,7 @@
                         $('.search-dialog').modal('show')
                         show = true;
                         $("#search-content").val("");
-                        window.setTimeout("$('#search-content').focus();", 500);
+                        $('#search-content').focus();
                     }
                     time1 = 0;
                 }
@@ -48,30 +57,22 @@
                 time1 = time2;
                 if (gap < 500) {
                     if (show) {
-                        $('.search-dialog').modal('hide')
+                        $('.search-dialog').modal('hide');
+                        show = false;
                     } else {
                         $('.search-dialog').modal('show')
                         $("#search-content").val("");
                         $('#search-content').focus();
-                        //window.setTimeout("$('#search-content').focus();", 500);
-
+                        show = true;
                     }
                     time1 = 0;
-                    show = !show;
-
                 }
             }
         });
 
         $(".search-btn").click(function(){
-            if (show) {
-                $('.search-dialog').modal('hide')
-            } else {
-                $('.search-dialog').modal('show')
                 $("#search-content").val("");
                 window.setTimeout("$('#search-content').focus();", 500);
-            }
-            show = !show;
         });
 
         $.getJSON("/search.json").done(function (data) {

@@ -458,9 +458,9 @@ blockquote {
   }
 }
 
-/***** sidebar for scroll top-bottom ******/
+/***** sidebar right ******/
 
-.scroll-top-down {
+.sidebar-right {
   width: 75px;
   position: fixed;
   top: 40%;
@@ -469,16 +469,16 @@ blockquote {
   z-index: 2222;
 }
 
-.scroll-top-down div {
+.sidebar-right div {
   margin-bottom: 5px;
   color: black;
 }
 
-.scroll-top-down i {
+.sidebar-right i {
   cursor: pointer;
 }
 
-.scroll-top-down div:hover {
+.sidebar-right div:hover {
   color: rgba(0, 0, 0, 0.8);
 }
 
@@ -507,16 +507,20 @@ blockquote {
 
 
 @media screen and (max-width: 750px) {
-  .scroll-top-down {
+  .sidebar-right {
     right: -10px;
   }
-  .scroll-top-down div {
+  .sidebar-right div {
     color: rgba(0, 0, 0, 0.4);
   }
 }
 
 .font-icons {
   margin: auto 5px;
+}
+
+.div-inline{
+  display: inline-flex;
 }
 
 

@@ -22,20 +22,6 @@
     <script type="text/javascript" src="{{ site.baseurl }}/assets/js/bootstrap3-typeahead.min.js"></script>
     <script type="text/javascript" src="{{ site.baseurl }}/assets/js/toc.js" ></script>
     <script type="text/javascript" src="{{ site.baseurl }}/assets/js/onlylemi.js"></script>
-    <script type="text/javascript">
-        jQuery(document).ready(function(){
-                /* scroll top down */
-                $(".js-scroll-top").click(function(){
-                        $("html,body").animate({scrollTop:$("#wrapper-masthead").offset().top},1000)
-                        });
-                $(".js-scroll-comment").click(function(){
-                        $("html,body").animate({scrollTop:$("#comments").offset().top},1000)
-                        });
-                $(".js-scroll-down").click(function(){
-                        $("html,body").animate({scrollTop:$("#wrapper-footer").offset().top},1000)
-                        });
-                });
-    </script>
 </head>
 
 <body>
@@ -61,43 +47,12 @@
 
 <div id="main" role="main" class="container">
     {{ content }}
-    <!-- sidebar for scroll top-bottom -->
-    <div class="scroll-top-down">
-        <div class="js-scroll-top" title="Top">
-	        <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-chevron-circle-up fa-stack-1x fa-inverse"></i>
-            </span>
-        </div>
-        <div class="search-btn" title="Search">
-	        <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-search fa-stack-1x fa-inverse"></i>
-            </span>
-        </div>
-        <div class="js-scroll-contents" title="Contents" data-toggle="modal" data-target=".contents-dialog">
-            <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-bars fa-stack-1x fa-inverse"></i>
-            </span>
-        </div>
-        <div class="js-scroll-comment" title="Comment">
-	        <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-comments fa-stack-1x fa-inverse"></i>
-            </span>
-        </div>
-        <div class="js-scroll-down" title="Bottom">
-	        <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-chevron-circle-down fa-stack-1x fa-inverse"></i>
-            </span>
-        </div>
-    </div>
 </div>
 
-{% include search.html %}
-{% include contents.html %}
+{% include dialog/search.html %}
+{% include dialog/donate.html %}
+{% include dialog/wechat.html %}
+{% include dialog/contents.html %}
 
 <!-- footer -->
 <div id="wrapper-footer" class="wrapper-footer">
