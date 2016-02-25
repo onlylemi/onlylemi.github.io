@@ -1,0 +1,27 @@
+---
+layout: nav
+title: 404 - Page not found
+permalink: /404.html
+---
+
+<div class="posts">
+    <h2 class="text-center">{{ page.title }}...</h2>
+    <h3>Search...</h3>
+    <div class="modal-lg form-group-lg">
+        <input id="search-content" type="text" class="form-control"
+               placeholder="Please input Name & Tags">
+    </div>
+    <div class="posts">
+        <h3>Recently...</h3>
+        {% for post in site.posts limit: 10 %}
+            <h5>
+                {% include post/category.html %}
+
+                {% include post/date.html %} - {% include post/title.html %}
+
+                <p class="br-screen"></p>
+                {% include post/tag.html %}
+            </h5>
+        {% endfor %}
+    </div>
+</div>
