@@ -7,6 +7,14 @@
 
  $(document).ready(function () {
 
+        var a=location.href;
+        var b=a.substring(5);
+        var a=a.substring(0,5);
+        var a=a.toLowerCase();
+        if(a=="http:") {
+          location.href="https:"+b;
+        }
+
         /* sidebar-right */
         $(".js-scroll-top").click(function(){
             $("html,body").animate({scrollTop:$("#wrapper-masthead").offset().top},1000)
