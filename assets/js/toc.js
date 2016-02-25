@@ -8,14 +8,18 @@
       headers: 'h1, h2, h3, h4, h5, h6',
       listType: 'ol', // values: [ol|ul]
       showEffect: 'show', // values: [show|slideDown|fadeIn|none]
-      showSpeed: 'slow' // set to 0 to deactivate effect
+      showSpeed: 'slow', // set to 0 to deactivate effect
+      isEncode: true // is or not encodeURIComponent
     },
     settings = $.extend(defaults, options);
 
     function fixedEncodeURIComponent (str) {
-      return encodeURIComponent(str).replace(/[!'()*]/g, function(c) {
-        return '%' + c.charCodeAt(0).toString(16);
-      });
+        if (settings.isEncode){
+             return encodeURIComponent(str).replace(/[!'()*]/g, function(c) {
+                    return '%' + c.charCodeAt(0).toString(16);
+                  });
+        }
+        return str;
     }
 
     var headers = $(settings.headers).filter(function() {

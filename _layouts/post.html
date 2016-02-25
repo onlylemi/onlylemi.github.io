@@ -3,7 +3,7 @@ layout: default
 ---
 
 <article class="post">
-    <h1>{{ page.title }}</h1>
+    <h1 id="{{ page.title }}">{{ page.title }}</h1>
     <h5><i class="font-icons fa fa-calendar"></i>: <em>{{ page.date | date: "%b %d, %Y" }}</em></h5>
     <h5><i class="font-icons fa fa-tags"></i>:
         {% for tag in page.tags %}
@@ -28,3 +28,4 @@ layout: default
 </article>
 
 {% include post/sidebar.html %}
+{% include post/contents.html %}

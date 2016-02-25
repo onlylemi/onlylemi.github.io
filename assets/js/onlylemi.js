@@ -19,7 +19,38 @@
             });
 
         /* contents */
-        $('#toc').toc();
+        $('#toc').toc({
+            title: '',
+            minimumHeaders: 0,
+            listType: 'ul',
+            isEncode: false
+            });
+
+        /* post-contents */
+        var show_contents = false;
+        $(".contents-btn").click(function(){
+            if (show_contents){
+                $(".post-contents").css({
+                    'visibility': 'hidden'
+                    });
+            }else {
+                $(".post-contents").css({
+                    'visibility': 'visible'
+                    });
+            }
+            show_contents = !show_contents;
+            });
+
+        $(".contents-close").click(function(){
+            $(".post-contents").css({
+                'visibility': 'hidden'
+                });
+            show_contents = !show_contents;
+            });
+
+        /* 滚动监听 */
+
+
 
         /* search */
         var time1 = 0;
@@ -39,7 +70,7 @@
                         $('.search-dialog').modal('show')
                         show = true;
                         $("#search-content").val("");
-                        $('#search-content').focus();
+                        window.setTimeout("$('#search-content').focus();", 500);
                     }
                     time1 = 0;
                 }
@@ -62,7 +93,7 @@
                     } else {
                         $('.search-dialog').modal('show')
                         $("#search-content").val("");
-                        $('#search-content').focus();
+                        window.setTimeout("$('#search-content').focus();", 500);
                         show = true;
                     }
                     time1 = 0;
@@ -70,8 +101,13 @@
             }
         });
 
+        $('#search-dialog').on('hidden.bs.modal', function (e) {
+            show = false;
+        })
+
         $(".search-btn").click(function(){
                 $("#search-content").val("");
+                /*$('#search-content').focus();*/
                 window.setTimeout("$('#search-content').focus();", 500);
         });
 

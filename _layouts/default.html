@@ -24,7 +24,7 @@
     <script type="text/javascript" src="{{ site.baseurl }}/assets/js/onlylemi.js"></script>
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".toc" data-offset="20">
 <div id="wrapper-masthead" class="wrapper-masthead">
     <div class="container">
         <header class="masthead clearfix">
@@ -50,9 +50,6 @@
 </div>
 
 {% include dialog/search.html %}
-{% include dialog/donate.html %}
-{% include dialog/wechat.html %}
-{% include dialog/contents.html %}
 
 <!-- footer -->
 <div id="wrapper-footer" class="wrapper-footer">

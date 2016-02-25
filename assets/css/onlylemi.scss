@@ -523,8 +523,24 @@ blockquote {
   display: inline-flex;
 }
 
+.post-contents {
+  max-width: 300px;
+  position: fixed;
+  top: 20%;
+  left: 20px;
+  right: 20px;
+  text-align: left;
+  z-index: 10;
+  visibility: hidden;
+}
 
+.contents-left {
+  left: 20px;
+  text-align: left;
+}
 
-.tag-color-android {
-
+@media screen and (max-width: 750px) {
+  .post-contents {
+    top: 5%;
+  }
 }
