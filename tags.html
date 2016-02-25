@@ -7,7 +7,7 @@ permalink: /tags/
 <div class="posts">
     <h1>Tags...</h1>
     {% for tag in site.tags %}
-    <a class="btn btn-default btn-xs tag-color-{{ tag[0] }}" href="#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a>
+    <a class="btn btn-default btn-xs tag-color-{{ tag[0] }}" href="#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}<span class="tags-num">{{ tag[1].size }}</span></a>
     {% endfor %}
 
     {% for tag in site.tags %}
