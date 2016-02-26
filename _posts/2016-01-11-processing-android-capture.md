@@ -163,7 +163,7 @@ void draw() {
     float[] values1 = as.getSensorValues(PSensorType.TYPE_ACCELEROMETER);
     
     float[] values2 = as.getOrientationSensorValues();
-    float[] values2 = as.getSensorValues(PSensorType.TYPE_ORIENTATION);     float[] values2 = as.getSensorValues(PSensorType.TYPE_ORIENTATION);
+    float[] values2 = as.getSensorValues(PSensorType.TYPE_ORIENTATION);
 
 
     float[] values3 = as.getMagneticFieldSensorValues();
