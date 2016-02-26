@@ -8,14 +8,11 @@
 $(document).ready(function() {
 
     /* set https */
-
-    var a = location.href;
-    var b = a.substring(5);
-    var c = a.substring(0, 5);
-    c = c.toLowerCase();
-    if (c == "http:") {
-        var c = a.substring(7, 16);
-        if (c != "localhost") {
+    if (location.hostname == "onlylemi.github.io") {
+        var a = location.href;
+        var b = a.substring(5);
+        a = a.substring(0, 5);
+        if (a == "http:") {
             location.href = "https:" + b;
         }
     }
