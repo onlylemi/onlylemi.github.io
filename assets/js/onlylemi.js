@@ -17,6 +17,19 @@ $(document).ready(function() {
         }
     }
 
+    /* nprogress */
+    $('body').show();
+    NProgress.start();
+    setTimeout(function() {
+        NProgress.done();
+    }, 300);
+
+    setTimeout(function() {
+        $(".wrapper-masthead").css({
+    	'border-top': '4px solid #262b3b'
+    });
+    }, 600);
+
     /* sidebar-right */
     $(".js-scroll-top").click(function() {
         $("html,body").animate({ scrollTop: $("#wrapper-masthead").offset().top }, 1000)
