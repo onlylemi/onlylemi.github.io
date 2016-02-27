@@ -5,6 +5,7 @@ permalink: projects/processing-android-capture/
 category: projects
 tags: [android, processing]
 excerpt: processing-android-capture
+repository: onlylemi/processing-android-capture
 ---
 
 # processing-android-capture

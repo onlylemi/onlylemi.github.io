@@ -4,13 +4,16 @@ layout: default
 
 <article class="post">
     <h1 id="{{ page.title }}">{{ page.title }}</h1>
-    <h5><i class="font-icons fa fa-calendar"></i>: <em>{{ page.date | date: "%b %d, %Y" }}</em></h5>
-    <h5><i class="font-icons fa fa-tags"></i>:
+    <p><strong><i class="font-icons fa fa-calendar"></i>: <em>{{ page.date | date: "%b %d, %Y" }}</em></strong></p>
+    <p><strong><i class="font-icons fa fa-tags"></i>:
         {% for tag in page.tags %}
-        <a class="btn btn-default btn-xs tag-color-{{ tag }}" type="button" href="{{ site.baseurl }}/tags/#{{ tag }}"
+        <a class="btn btn-default btn-xs tag-color-{{ tag }}" href="{{ site.baseurl }}/tags/#{{ tag }}"
            title="{{ tag }}">{{ tag }}</a>
-        {% endfor %}
-    </h5>
+        {% endfor %}</strong>
+    </p>
+    {% if  page.repository %}
+    <p><strong><span class="font-icons octicon octicon-repo"></span>: </strong><a  class="btn btn-success btn-xs" href="">{{ page.repository }}</a></p>
+    {% endif %}
     <hr>
     <div class="entry">
         {{ content }}
