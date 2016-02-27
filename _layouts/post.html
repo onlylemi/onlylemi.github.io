@@ -4,8 +4,8 @@ layout: default
 
 <article class="post">
     <h1 id="{{ page.title }}">{{ page.title }}</h1>
-    <p><strong><i class="font-icons fa fa-calendar"></i>: <em>{{ page.date | date: "%b %d, %Y" }}</em></strong></p>
-    <p><strong><i class="font-icons fa fa-tags"></i>:
+    <p><strong><span class="font-icons fa fa-calendar"></span>: <em>{{ page.date | date: "%b %d, %Y" }}</em></strong></p>
+    <p><strong><span class="font-icons fa fa-tags"></span>:
         {% for tag in page.tags %}
         <a class="btn btn-default btn-xs tag-color-{{ tag }}" href="{{ site.baseurl }}/tags/#{{ tag }}"
            title="{{ tag }}">{{ tag }}</a>

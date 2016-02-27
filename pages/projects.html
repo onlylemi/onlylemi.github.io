@@ -10,12 +10,15 @@ permalink: /projects/
     {% if post.category == 'projects' %}
     <article class="post">
 
-        <h5><i class="font-icons fa fa-calendar"></i>: <em>{% include post/date.html %}</em></h5>
-        <h5><i class="font-icons fa fa-github"></i>: {% include post/title.html %}</strong>
-            <p class="br-screen"></p>
+        <h5><span class="font-icons fa fa-calendar"></span>: <em>{% include post/date.html %}</em></h5>
+        <h5><span class="font-icons fa fa-github"></span>: {% include post/title.html %}</strong>
+            <span class="br-screen"></span>
             {% include post/tag.html %}
         </h5>
-        <h5><i class="font-icons fa fa-exclamation-circle"></i>: <strong>{{ post.excerpt }}</strong></h5>
+        {% if  post.repository %}
+        <h5><strong><span class="font-icons octicon octicon-repo"></span>: </strong><a class="btn btn-success btn-xs" href="https://github.com/{{ page.repository }}" target="_blank">{{ post.repository }}</a></h5>
+        {% endif %}
+        <h5><span class="font-icons fa fa-exclamation-circle"></span>: <strong>{{ post.excerpt }}</strong></h5>
 
     </article>
     {% endif %}
