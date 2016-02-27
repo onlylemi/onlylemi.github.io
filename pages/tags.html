@@ -12,7 +12,7 @@ permalink: /tags/
 
     {% for tag in site.tags %}
     <hr>
-    <h4 id="{{ tag[0] }}" href="{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}"><i class="font-icons fa fa-tag"></i>{{ tag[0] }}</h4>
+    <h4 id="{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}"><i class="font-icons fa fa-tag"></i>{{ tag[0] }}</h4>
     </p>
     {% for post in tag[1] %}
     <h5>
