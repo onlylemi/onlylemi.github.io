@@ -134,7 +134,7 @@ $(document).ready(function() {
         window.setTimeout("$('#search-content').focus();", 500);
     });
 
-    $.getJSON("/assets/search.json").done(function(data) {
+    $.getJSON("assets/search.json").done(function(data) {
         if (data.code == 0) {
             for (var index in data.data) {
                 var item = data.data[index];
