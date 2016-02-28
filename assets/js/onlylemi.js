@@ -26,8 +26,8 @@ $(document).ready(function() {
 
     setTimeout(function() {
         $(".wrapper-masthead").css({
-    	'border-top': '4px solid #262b3b'
-    });
+            'border-top': '4px solid #262b3b'
+        });
     }, 600);
 
     /* sidebar-right */
