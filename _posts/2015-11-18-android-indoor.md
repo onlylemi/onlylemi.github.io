@@ -11,8 +11,6 @@ excerpt: 《驻足》是一款室内地磁定位地磁定位Android APP，通过
 
 ---
 
-# 驻足（地磁定位室内导航APP）
-
 这是在**2015**暑假我做的拎一个Android项目，一直都想做一个相对有意义的一件作品，所以在google、baidu查看了好多资料，看到地磁室内定位这是一个很好的市场，国内很少有公司再做，所以我想挑战下，看了很多这方面的论文，最后我们采用[IndoorAtlas](https://www.indooratlas.com/)的定位技术，在此基础上我们做室内导航，路线规划等问题，同时把商家这个大市场可以添加进来，将会是一个很大的市场，所以我们从 `2015-06-25` 到 `2015-11-10` 完成了这个项目，还仅仅是个`Demo`，还正在进行测试。  
 
 下面我们就一起先看看吧！  
@@ -42,25 +40,25 @@ excerpt: 《驻足》是一款室内地磁定位地磁定位Android APP，通过
   ![Logo](https://raw.githubusercontent.com/onlylemi/onlylemi.github.io/master/assets/images/post/android_indoor_icon.png)  
 
 * 主界面  
-  ![主界面](https://raw.githubusercontent.com/onlylemi/onlylemi.github.io/master/assets/images/post/android_indoor_4.png)  
+  ![主界面](https://raw.githubusercontent.com/onlylemi/onlylemi.github.io/master/assets/images/post/android_indoor_4.jpg)  
 
 * 侧边栏进行地区商城选择界面  
-  ![侧边栏进行地区商城选择界面](https://raw.githubusercontent.com/onlylemi/onlylemi.github.io/master/assets/images/post/android_indoor_3.png)  
+  ![侧边栏进行地区商城选择界面](https://raw.githubusercontent.com/onlylemi/onlylemi.github.io/master/assets/images/post/android_indoor_3.jpg)  
 
 * 商城介绍界面  
-  ![商城介绍界面](https://raw.githubusercontent.com/onlylemi/onlylemi.github.io/master/assets/images/post/android_indoor_5.png)  
+  ![商城介绍界面](https://raw.githubusercontent.com/onlylemi/onlylemi.github.io/master/assets/images/post/android_indoor_5.jpg)  
 
 * 两点间寻找最短路径导航界面  
-  ![两点间寻找最短路径导航界面](https://raw.githubusercontent.com/onlylemi/onlylemi.github.io/master/assets/images/post/android_indoor_5.png)  
+  ![两点间寻找最短路径导航界面](https://raw.githubusercontent.com/onlylemi/onlylemi.github.io/master/assets/images/post/android_indoor_5.jpg)  
 
 * 多点间最短路径导航界面  
-  ![多点间最短路径导航界面](https://raw.githubusercontent.com/onlylemi/onlylemi.github.io/master/assets/images/post/android_indoor_1.png)  
+  ![多点间最短路径导航界面](https://raw.githubusercontent.com/onlylemi/onlylemi.github.io/master/assets/images/post/android_indoor_1.jpg)  
 
 * 商家发布活动列表界面  
-  ![商家发布活动列别界面](https://raw.githubusercontent.com/onlylemi/onlylemi.github.io/master/assets/images/post/android_indoor_6.png)  
+  ![商家发布活动列别界面](https://raw.githubusercontent.com/onlylemi/onlylemi.github.io/master/assets/images/post/android_indoor_6.jpg)  
 
 * 摄像头和智能箭头导航  
-  ![摄像头和智能箭头导航](https://raw.githubusercontent.com/onlylemi/onlylemi.github.io/master/assets/images/post/android_indoor_2.png)  
+  ![摄像头和智能箭头导航](https://raw.githubusercontent.com/onlylemi/onlylemi.github.io/master/assets/images/post/android_indoor_2.jpg)  
 
 
 ## 技术应用

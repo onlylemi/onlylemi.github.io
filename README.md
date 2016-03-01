@@ -8,3 +8,9 @@ onlylemi blog, [github](https://github.com) + [stackedit](https://stackedit.io/)
 ## Wlecome to visit
 
 About me: https://onlylemi.github.io/about/
+
+## BACKUP
+
+```
+git push gitcafe master:gitcafe-pages
+```
