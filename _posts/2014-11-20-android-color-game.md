@@ -35,22 +35,22 @@ excerpt: 《颜色竞技》是一款Android平台下的颜色娱乐类游戏，�
 ## 作品截图
 
 * Logo  
-  ![游戏Logo](https://raw.githubusercontent.com/onlylemi/onlylemi.github.io/master/assets/images/android_color_ico.png)
+  ![游戏Logo](https://raw.githubusercontent.com/onlylemi/onlylemi.github.io/master/assets/images/post/android_color_ico.png)
 
-* 主界面
-  ![游戏Logo](https://raw.githubusercontent.com/onlylemi/onlylemi.github.io/master/assets/images/android_color_1.png)
+* 主界面  
+  ![游戏Logo](https://raw.githubusercontent.com/onlylemi/onlylemi.github.io/master/assets/images/post/android_color_1.png)
 
-* ColorFly界面
-  ![游戏Logo](https://raw.githubusercontent.com/onlylemi/onlylemi.github.io/master/assets/images/android_color_2.png)
+* ColorFly界面  
+  ![游戏Logo](https://raw.githubusercontent.com/onlylemi/onlylemi.github.io/master/assets/images/post/android_color_2.png)
 
-* ColorRun界面
-  ![游戏Logo](https://raw.githubusercontent.com/onlylemi/onlylemi.github.io/master/assets/images/android_color_3.png)
+* ColorRun界面  
+  ![游戏Logo](https://raw.githubusercontent.com/onlylemi/onlylemi.github.io/master/assets/images/post/android_color_3.png)
 
-* ColorSwim界面
-  ![游戏Logo](https://raw.githubusercontent.com/onlylemi/onlylemi.github.io/master/assets/images/android_color_4.png)
+* ColorSwim界面  
+  ![游戏Logo](https://raw.githubusercontent.com/onlylemi/onlylemi.github.io/master/assets/images/post/android_color_4.png)
 
-* 颜色识别界面
-  ![游戏Logo](https://raw.githubusercontent.com/onlylemi/onlylemi.github.io/master/assets/images/android_color_5.png)
+* 颜色识别界面  
+  ![游戏Logo](https://raw.githubusercontent.com/onlylemi/onlylemi.github.io/master/assets/images/post/android_color_5.png)
 
 ## 技术总结
 
