@@ -13,7 +13,7 @@ $(document).ready(function() {
         var b = a.substring(5);
         a = a.substring(0, 5);
         if (a == "http:") {
-            //location.href = "https:" + b;
+            location.href = "https:" + b;
         }
     }
 
