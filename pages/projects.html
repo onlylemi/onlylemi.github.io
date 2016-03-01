@@ -1,6 +1,6 @@
 ---
 layout: nav
-title: Projects
+title: PROJECTS
 permalink: /projects/
 ---
 
@@ -16,7 +16,7 @@ permalink: /projects/
             {% include post/tag.html %}
         </h5>
         {% if  post.repository %}
-        <h5><strong><span class="font-icons octicon octicon-repo"></span>: </strong><a class="btn btn-success btn-xs" href="https://github.com/{{ page.repository }}" target="_blank">{{ post.repository }}</a></h5>
+        <h5><strong><span class="font-icons octicon octicon-repo"></span>: </strong><a class="btn btn-success btn-xs" href="https://github.com/{{ post.repository }}" target="_blank">{{ post.repository }}</a></h5>
         {% endif %}
         <h5><span class="font-icons fa fa-exclamation-circle"></span>: <strong>{{ post.excerpt }}</strong></h5>
 

@@ -14,6 +14,9 @@ layout: default
     {% if  page.repository %}
     <p><strong><span class="font-icons octicon octicon-repo"></span>: </strong><a  class="btn btn-success btn-xs" href="https://github.com/{{ page.repository }}" target="_blank">{{ page.repository }}</a></p>
     {% endif %}
+    {% if  page.organization-name %}
+    <p><strong><span class="font-icons octicon octicon-location"></span>: </strong><a  class="btn btn-info btn-xs" href="{{ page.organization-url }}" target="_blank">{{ page.organization-name }}</a></p>
+    {% endif %}
     <hr>
     <div class="entry">
         {{ content }}

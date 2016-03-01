@@ -4,8 +4,10 @@ title: 一个Processing与Android交互的库
 permalink: projects/processing-android-capture/
 category: projects
 tags: [android, processing]
-excerpt: 这是一个有关 processing 和 android 交互的library。通过Android app客户端获取手机的摄像头图像及各类传感器的数据通过局域网WiFi通信socket编程技术发送到processing服务端，服务端接受数据然后进行图像处理、数据应用。
 repository: onlylemi/processing-android-capture
+organization-name: 中北Android实验室
+organization-url: https://github.com/android-nuc
+excerpt: 这是一个有关 processing 和 android 交互的library。通过Android app客户端获取手机的摄像头图像及各类传感器的数据通过局域网WiFi通信socket编程技术发送到processing服务端，服务端接受数据然后进行图像处理、数据应用。
 
 ---
 
