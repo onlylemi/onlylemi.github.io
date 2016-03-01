@@ -16,7 +16,7 @@ excerpt: 《驻足》是一款室内地磁定位地磁定位Android APP，通过
 下面我们就一起先看看吧！  
 
 <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="http://www.tudou.com/v/p6c_uAXo9kQ/&rpid=326917756&resourceId=326917756_04_05_99/v.swf" allowtransparency="true" allowfullscreen="true"></iframe>
+  <iframe class="embed-responsive-item" src="//www.tudou.com/v/p6c_uAXo9kQ/&rpid=326917756&resourceId=326917756_04_05_99/v.swf" allowtransparency="true" allowfullscreen="true"></iframe>
 </div>
 
 ## 介绍
