@@ -5,6 +5,11 @@ layout: default
 <article class="post">
     <h1 id="{{ page.title }}">{{ page.title }}</h1>
     <p><strong><span class="font-icons fa fa-calendar"></span>: <em>{{ page.date | date: "%b %d, %Y" }}</em></strong></p>
+
+    {% if  page.period %}
+    <p><strong><span class="font-icons fa fa-clock-o"></span>: {{ page.period }}</strong></p>
+    {% endif %}
+
     <p><strong><span class="font-icons fa fa-tags"></span>:
         {% for tag in page.tags %}
         <a class="btn btn-default btn-xs tag-color-{{ tag }}" href="{{ site.baseurl }}/tags/#{{ tag }}"

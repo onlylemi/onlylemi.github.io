@@ -5,6 +5,7 @@ permalink: projects/android-indoor/
 category: projects
 tags: [android, position, 地磁]
 repository: 
+period: 2015-06-15 —— 2015-11-10
 organization-name: 中北Android实验室
 organization-url: https://github.com/android-nuc
 excerpt: 《驻足》是一款室内地磁定位地磁定位Android APP，通过规划最优路线，解决了室内导航问题，可以让人们迅速的到达自己想去的地方，买到想要的东西；同时加入商城商家，更好的促进商品的消费。

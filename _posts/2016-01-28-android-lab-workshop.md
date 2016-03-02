@@ -5,15 +5,16 @@ permalink:
 category: 
 tags: [android]
 repository: android-nuc/AndroidTrian_InWinter
+period: 2016-01-21 —— 2016-01-25
 organization-name: 中北Android实验室
 organization-url: https://github.com/android-nuc
 excerpt: 2016-01-21——2016-01-25，我为实验室大二、大一的学生进行了为期五天Android技术开发培训、晓宇进行美工培训。
 
 ---
 
-从2015的十月份实验室对大一学生完成纳新，十一月份底对大二学生完成纳新。纳新结束之后，就开始对实验室的新成员进行Java和Android的培训，在寒假结束之前我们完成了Java和Android基础部分的培训，java基础部分由魏福成进行，android基础部分由陶程进行。当大家都进入还加假期时，实验室的孩子们却继续留校学习，在这五天内，他们依然要学习，贾晓宇对他们进行美工培训，我为他们进行Android进阶技术讲解。  
+从2015的十月份实验室对大一学生完成纳新，十一月份底对大二学生完成纳新。纳新结束之后，就开始对实验室的新成员进行 `Java` 和 `Android` 的培训，在寒假结束之前我们完成了 Java 和 Android 基础部分的培训，java 基础部分由魏福成进行，android 基础部分由陶程进行。当大家都进入还加假期时，实验室的孩子们却继续留校学习，在这五天内，他们依然要学习，贾晓宇对他们进行美工培训，我为他们进行Android进阶技术讲解。  
 
-现在我总结下我进行的Android进阶培训有关知识点。  
+现在我总结下我进行的**Android 进阶培训**有关知识点。  
 
 ![实验室培训场面1](https://raw.githubusercontent.com/onlylemi/onlylemi.github.io/master/assets/images/post/android-lab-workshop_1.jpg)  
 

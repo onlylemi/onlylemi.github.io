@@ -5,6 +5,7 @@ permalink: projects/wechat-printer-apm/
 category: projects
 tags: [wechat, qrcode, printer]
 repository: 
+period: 2014-12-15 —— 2015-12-15
 organization-name: 中北Android实验室
 organization-url: https://github.com/android-nuc
 excerpt: 这是一个基于ARM的微信二维码远程打印机，通过微信扫描二维码连接到打印机，然后选择自己想要打的文档，就可以在我们的打印机上打印出来。
