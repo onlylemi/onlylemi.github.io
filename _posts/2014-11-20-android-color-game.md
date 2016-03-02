@@ -16,8 +16,9 @@ excerpt: 《颜色竞技》是一款Android平台下的颜色娱乐类游戏，�
 下面就让大家具体看看吧。后来也还参加比赛，还拿了奖。  
 
 <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="//www.tudou.com/programs/view/html5embed.action?type=0&code=R48BJ1kCfYo&lcode=&resourceId=326917756_06_05_99" allowtransparency="true" allowfullscreen="true"></iframe>
+  <iframe class="embed-responsive-item" src="http://www.tudou.com/programs/view/html5embed.action?type=0&code=R48BJ1kCfYo&lcode=&resourceId=326917756_06_05_99" allowtransparency="true" allowfullscreen="true"></iframe>
 </div>
+视频地址：[http://www.tudou.com/programs/view/R48BJ1kCfYo/](http://www.tudou.com/programs/view/R48BJ1kCfYo/)
 
 ## 介绍
 
@@ -26,9 +27,9 @@ excerpt: 《颜色竞技》是一款Android平台下的颜色娱乐类游戏，�
 * **ColorFly**是一款消除类游戏，与传统的消除类游戏不同之处在于，传统的消除类游戏是通过判断两个图标或图片是否一样来消除，这种消除游戏直观、难度性低，然而我们这款游戏是通过消除障碍来进行消除，在游戏中，屏幕的右方会不断飘出由各种颜色组成的障碍，玩家可以通过点击屏幕下方的颜色块来消除障碍，随着游戏的不断进行，游戏的难度会逐渐增加，同时当你消除的障碍达到一定的数量时，会赠送保护罩一个，可抵挡一次生命。
 * **ColorRun**是一款跑酷类游戏，与传统的跑酷类游戏不同之处在于，传统的跑酷类游戏的障碍以及沟壑都是直观的显示出来，玩家可以直接进行跳跃或躲避，然而我们这款跑酷类游戏，玩家是通过屏幕上方飘来的颜色来判断游戏中可使用的素材，没有出现的颜色则视为无用，玩家必须进行跳跃（最多可连跳两次）来躲避，随着游戏的进行，游戏的难度也会增加。
 * **ColorSwim**是一款碰撞类游戏，与传统的碰撞类游戏不同之出在于，传统的碰撞类游戏像打飞机，玩家通过发射子弹来打击敌机，然而我们这款碰撞类游戏与其正好相反，主角拥有三个不同颜色的光圈，左右手来控制主角的移动位置与转动位置，同时手机屏幕上会随机的产生不同颜色的小球，小球会追踪主角，当小球快要碰撞到主角时，只需控制主角，把相同颜色的光圈碰撞到小球，就算成功，随着游戏的进行，小球的数量也会逐渐增加。
- 
-## 获奖情况
 
+## 获奖情况
+> 
 * 2014华北五省计算机应用大赛全国二等奖
 * 2015中北大学刘鼎杯创新创业大赛二等奖
 
