@@ -5,9 +5,9 @@ permalink: /about/
 
 ---
 
-**祁建斌（Jianbin Qi）**
-
 ![MyPhoto](https://raw.githubusercontent.com/onlylemi/onlylemi.github.io/master/assets/images/logo1.png)
+
+**祁建斌（Jianbin Qi）**
 
 **一只不务正业的程序猿。**
 
