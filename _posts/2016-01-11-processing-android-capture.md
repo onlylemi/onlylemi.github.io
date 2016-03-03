@@ -14,6 +14,8 @@ excerpt: 这是一个有关 processing 和 android 交互的library。通过Andr
 
 # AndroidCapture For Processing
 
+![Logo](https://raw.githubusercontent.com/onlylemi/onlylemi.github.io/master/assets/images/post/processing_android_capture_logo.gif)
+
 ## Lib介绍
 这是一个有关 [processing](https://processing.org) 和 [android](https://android.com) 交互的`library`。通过`Android app`客户端获取手机的摄像头图像及各类传感器的数据通过局域网`WiFi`通信`socket`编程技术发送到`processing`服务端，服务端接受数据然后进行图像处理、数据应用。
 
