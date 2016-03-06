@@ -1,9 +1,15 @@
-# onlylemi.github.io
-onlylemi blog, [github](https://github.com) + [stackedit](https://stackedit.io/) + [google drive](https://drive.google.com/) + [maxiang](https://maxiang.io/)
+# ONLYLEMI
 
-* **github**: web hosting
-* **stackedit maxiang**: markdown + push
-* **google drive**: article backups
+
+一只不务正业的程序猿。A little programmer.
+
+* jekyll
+* bootstrap
+* oction
+* font-awesome
+* jquery
+* cmd markdown
+* nprogress
 
 ## Wlecome to visit
 
