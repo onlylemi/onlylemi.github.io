@@ -2,7 +2,7 @@
 layout: post
 title: Android 实验室为期五天寒假培训
 permalink: 
-category: 
+category: blog
 tags: [android]
 repository: android-nuc/AndroidTrian_InWinter
 period: 2016-01-21 —— 2016-01-25

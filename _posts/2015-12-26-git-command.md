@@ -1,8 +1,8 @@
 ---
 layout: post
-title: [Git]我最常用的 git 命令
+title: 【Git】最常用的 git 命令
 permalink: 
-category: projects
+category: blog
 tags: [git]
 repository: 
 period: 
@@ -12,26 +12,24 @@ excerpt: 我最常使用的一些git command。都已测试成功！
 
 ---
 
-# git 操作
-
 ## git 命令
 
 * 创建本地仓库
 
-```
+```java
 git init
 ```
 
 * 获取远程仓库
 
-```
+```java
 git clone [url]
 例：git clone https://github.com/you/yourpro.git
 ```
 
 * 创建远程仓库
 
-```
+```java
 // 添加一个新的 remote 远程仓库
 git remote add [remote-name] [url]
 例：git remote add origin https://github.com/you/yourpro.git
@@ -52,7 +50,7 @@ git remote rename [old-name] [new-name]
 
 * 从本地仓库中删除
 
-```
+```java
 git rm file.txt         // 从版本库中移除，删除文件
 git rm file.txt -cached // 从版本库中移除，不删除原始文件
 git rm -r xxx           // 从版本库中删除指定文件夹
@@ -60,20 +58,20 @@ git rm -r xxx           // 从版本库中删除指定文件夹
 
 * 从本地仓库中添加新的文件
 
-```
+```java
 git add .               // 添加所有文件
 git add file.txt        // 添加指定文件
 ```
 
 * 提交，把缓存内容提交到 HEAD 里
 
-```
+```java
 git commit -m "注释"
 ```
 
 * 撤销
 
-```
+```java
 // 撤销最近的一个提交.
 git revert HEAD
 
@@ -89,32 +87,32 @@ git reset --hard
 
 * 把本地提交 push 到远程服务器
 
-```
+```java
 git push [remote-name] [loca-branch]:[remote-branch]
 例：git push origin master:master
 ```
 
 * 查看状态
 
-```
+```java
 git status
 ```
 
 * 从远程库中下载新的改动
 
-```
+```java
 git fetch [remote-name]/[branch]
 ```
 
 * 合并下载的改动到分支
 
-```
+```java
 git merge [remote-name]/[branch]
 ```
 
 * 从远程库中下载新的改动
 
-```
+```java
 pull = fetch + merge
 
 git pull [remote-name] [branch]
@@ -123,7 +121,7 @@ git pull [remote-name] [branch]
 
 * 分支
 
-```
+```java
 // 列出分支
 git branch
 
@@ -139,7 +137,7 @@ git push (remote-name) :(remote-branch)
 
 * 切换分支
 
-```
+```java
 // 切换到一个分支
 git checkout [branch-name]
 
@@ -151,7 +149,7 @@ git checkout -b [branch-name]
 
 在本地仓库根目录创建 .gitignore 文件。Win7 下不能直接创建，可以创建 ".gitignore." 文件，后面的标点自动被忽略；
 
-```
+```java
 /.idea          // 过滤指定文件夹
 /fd/*           // 忽略根目录下的 /fd/ 目录的全部内容；
 *.iml           // 过滤指定的所有文件
