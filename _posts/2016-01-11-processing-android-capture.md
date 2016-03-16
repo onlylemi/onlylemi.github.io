@@ -16,6 +16,12 @@ excerpt: 这是一个有关 processing 和 android 交互的 library。通过 An
 
 ![Logo](https://raw.githubusercontent.com/onlylemi/onlylemi.github.io/master/assets/images/post/processing_android_capture_logo.gif)
 
+> 
+* 已被 [processing.org](https://processing.org/reference/libraries/) 官方收录
+* 已被 [creativecoding.cn](http://creativecoding.cn/?p=587) 收录
+* 已被 [OF COURSE](http://mp.weixin.qq.com/s?__biz=MzA4NTc5MDU5OQ==&mid=410954063&idx=1&sn=cd94026161ffc4862a4397571041d605&3rd=MzA3MDU4NTYzMw==&scene=6#rd) 收录
+
+
 ## Lib介绍
 这是一个有关 [processing](https://processing.org) 和 [android](https://android.com) 交互的`library`。通过`Android app`客户端获取手机的摄像头图像及各类传感器的数据通过局域网`WiFi`通信`socket`编程技术发送到`processing`服务端，服务端接受数据然后进行图像处理、数据应用。
 
