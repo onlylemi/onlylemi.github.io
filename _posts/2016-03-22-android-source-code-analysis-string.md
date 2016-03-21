@@ -2,7 +2,7 @@
 layout: post
 title: 从源码角度了解 String
 permalink: 
-category: blog
+category: projects
 tags: [java, 类解析]
 repository: onlylemi/android-source-code-analysis/blob/master/String.md
 period: 
