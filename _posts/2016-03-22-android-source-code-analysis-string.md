@@ -1,13 +1,13 @@
 ---
 layout: post
 title: 从源码角度了解 String
-permalink:
+permalink: 
 category: blog
 tags: [java, 类解析]
-repository: android-source-code-analysis/blob/master/String.md
-period:
-organization-name:
-organization-url:
+repository: onlylemi/android-source-code-analysis/blob/master/String.md
+period: 
+organization-name: 
+organization-url: 
 excerpt: 从源码的角度解析 String、StringBuilder，StringBuffer。
 
 ---
