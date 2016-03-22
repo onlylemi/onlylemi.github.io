@@ -311,6 +311,6 @@ public int hashCode() {
 
 通过以上学习，应该知道 String 基本原理了吧。后续将会从源码角度继续解析其他类，欢迎大家关注学习。
 
-欢迎关注我的**微信公众平台(@onlylemi)，第一时间获取最新更新。
+欢迎关注我的**微信公众平台(@onlylemi)**，第一时间获取最新更新。
 
 ![微信公众平台@onlylemi](https://onlylemi.github.io/assets/images/qrcode_wechat.jpg)
