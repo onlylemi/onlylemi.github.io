@@ -241,13 +241,49 @@ v.setSize(4);  // v.size() = 4; v.capacity() = 10;
 v.setSize(11);  // v.size() = 11; v.capacity() = 20;
 ```
 
+### Stack 
+
+Stack（栈） 是 Vector 的子类，其内部实现基本上都是调用父类的方法，封装成出栈、入栈等操作
+
+```java
+// 入栈
+public E push(E item) {
+    addElement(item);
+    return item;
+}
+
+// 出栈
+public synchronized E pop() {
+    E obj;
+    int len = size();
+    obj = peek(); // 先查到栈顶元素，再移除，返回栈顶元素
+    removeElementAt(len - 1);
+    return obj;
+}
+// 查询栈顶元素
+public synchronized E peek() {
+    int len = size();
+    if (len == 0)
+        throw new EmptyStackException();
+    return elementAt(len - 1);
+}
+// 查询对象的索引
+public synchronized int search(Object o) {
+    int i = lastIndexOf(o);
+    if (i >= 0) {
+        return size() - i;
+    }
+    return -1;
+}
+```
+
 ## 总结
 
 通过以上的说明，ArrayList、LinkedList、Vector 区别也就很明显了。
 
 * ArrayList 和 Vector 底层是采用数组方式存储数据，LinkedList 采用链表
 * Vector 线程安全，ArrayList、LinkedList 线程不安全
-* ArrayList 默认容量为 **0**，第一次 add 时，变为 **10**，之后每次增加原来的 **0.5** 倍；Vector 默认容量为 **10**，之后每次增加原来的 **1** 倍
+* ArrayList 默认容量为 **0**，第一次 add 时，变为 10，之后每次增加原来的 **0.5** 倍；Vector 默认容量为 **10**，之后每次增加原来的 **1** 倍
 
 
 ## 推荐阅读
