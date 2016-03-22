@@ -37,7 +37,7 @@ excerpt: 这是一个有关 processing 和 android 交互的 library。通过 An
 > 12月13日下午1点-3点，来自财新数据可视化实验室的执行总监**[任远老师](http://yuanren.cc/)**在 **[OF COURSE](http://www.ofcourse.io/)** 给大家进行 [Live Coding+Music Visualization](http://e.vhall.com/686423389) 现场表演！期间，任远老师在做视频和音乐的互动时，即兴的将观众融入到了作品中，用手机将现场的观众录制下来，然后将录制的视频进行播放，通过摄像头和音乐进行了实时的互动，观众成为了 **live coding** 的一部分，同时观众也参与了作品的创作。live coding 并不是我一个人在写 code，而是大家和我一起完成code。 在这个环节中手机正好可以当做这个媒介，如果我可以拿着手机把手机拍摄到的画面可以实时传到processing中处理，而不是先在现场录制一段视屏然后再播放处理这样效果是不是更好呢?  
 **Live coding代码**：[https://github.com/onlylemi/MusicVisual](https://github.com/onlylemi/MusicVisual)
 
-正因为如此，我就决定开发一个 processing 和 android 交互的库，供大家来使用，同时，**作为一个只用p rocessing 从来就没给[ [foundation](https://github.com/processing) 捐赠过的人，写这样一个lib来为社区做点贡献，这样心里应该会好过点吧。。。**
+正因为如此，我就决定开发一个 processing 和 android 交互的库，供大家来使用，同时，**作为一个只用p rocessing 从来就没给[foundation](https://github.com/processing) 捐赠过的人，写这样一个lib来为社区做点贡献，这样心里应该会好过点吧。。。**
 
 就这样这个库诞生了。我称它为 **AndroidCapture For Processing**。**capture** 包括**android** `camera`、`sensor`。
 
