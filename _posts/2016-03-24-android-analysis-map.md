@@ -4,7 +4,7 @@ title: 从源码角度了解 Map
 permalink: 
 category: blog
 tags: [java, analysis]
-repository: onlylemi/android-source-code-analysis/blob/master/List.md
+repository: onlylemi/notes/blob/master/java/Map.md
 period: 
 organization-name: 
 organization-url: 
@@ -80,7 +80,7 @@ Collections 的 synchronizedMap 方法使 HashMap 具有同步的能力，或者
 
 ## END
 
-明天给大家解析 `Set` ，欢迎大家关注学习。
+下期给大家解析 `Set` ，欢迎大家关注学习。
 
 欢迎关注我的**微信公众平台(@onlylemi)**，第一时间获取最新更新。  
 ![微信公众平台(@onlylemi)](https://onlylemi.github.io/assets/images/qrcode_wechat.jpg)

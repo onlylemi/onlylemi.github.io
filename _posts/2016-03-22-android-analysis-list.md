@@ -4,7 +4,7 @@ title: 从源码角度了解 List
 permalink: 
 category: blog
 tags: [java, analysis]
-repository: onlylemi/android-source-code-analysis/blob/master/List.md
+repository: onlylemi/notes/blob/master/java/List.md
 period: 
 organization-name: 
 organization-url: 
@@ -16,7 +16,7 @@ excerpt: 从源码的角度解析 Java 集合 List，ArrayList、LinkedList、Ve
 
 大家先看下集合中的类图
 
-![集合类图](https://raw.githubusercontent.com/onlylemi/android-source-code-analysis/master/img/collection.png)
+![集合类图](https://raw.githubusercontent.com/onlylemi/notes/master/images/collection.png)
 
 ## Collection
 

@@ -4,7 +4,7 @@ title: 从源码角度了解 String
 permalink: 
 category: blog
 tags: [java, analysis]
-repository: onlylemi/android-source-code-analysis/blob/master/String.md
+repository: onlylemi/notes/blob/master/java/String.md
 period: 
 organization-name: 
 organization-url: 
@@ -22,7 +22,7 @@ excerpt: 从源码的角度解析 String、StringBuilder，StringBuffer。
 
 首先先看下类图（下图）
 
-![String类图](https://raw.githubusercontent.com/onlylemi/android-source-code-analysis/master/img/String.png)
+![String类图](https://raw.githubusercontent.com/onlylemi/notes/master/images/String.png)
 
 ## 类定义
 
