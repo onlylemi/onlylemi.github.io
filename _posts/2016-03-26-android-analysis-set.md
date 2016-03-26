@@ -53,7 +53,5 @@ HashSet(int initialCapacity, float loadFactor, boolean dummy) {
 
 ## END
 
-下期给大家解析 `Set` ，欢迎大家关注学习。
-
 欢迎关注我的**微信公众平台(@onlylemi)**，第一时间获取最新更新。  
 ![微信公众平台(@onlylemi)](https://onlylemi.github.io/assets/images/qrcode_wechat.jpg)
