@@ -12,8 +12,6 @@ excerpt: 从源码的角度解析 Java 集合 Map，HashMap、Hashtable、Linede
 
 ---
 
-# 从源码角度了解 Map
-
 先给大家介绍 `Map`，之后再介绍 `Set`，在网上看到好多大神写的都非常详细，我就不做更多的说明，结合他们的源码解析，我做个总结。
 
 ## 类图
@@ -39,7 +37,7 @@ excerpt: 从源码的角度解析 Java 集合 Map，HashMap、Hashtable、Linede
 
 * 继承自 AbstractMap 类
 * 数组 + 链表
-* put时，根据 key 的 keyCode 重新计算 hash 值 `hash = hash(key.hashCode())`，找到元素在数组中的位置，然储存在该位置，如果已经存在，则在该位置以链表的形式进行存放，新加入的放在链头，最先加入的在链尾
+* put 时，根据 key 的 keyCode 重新计算 hash 值 `hash = hash(key.hashCode())`，找到元素在数组中的位置，然储存在该位置，如果已经存在，则在该位置以链表的形式进行存放，新加入的放在链头，最先加入的在链尾
 * 初始容量为 **16**（而且一定是 **2** 的指数），负载因子为 **0.75**
 * key 不能重复，value 可以重复
 * 允许 key=null，value=null，key=null 时储存在数组的头部，因此不能通过 `get()` 方法来判断 HashMap 中是否存在某个 key，而应该用 `containsKey()` 方法来判断
