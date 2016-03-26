@@ -22,9 +22,9 @@ excerpt: 从源码的角度解析 Java 集合 Set，HashSet、LinededHashMap、T
         
 ## 源码解析
 
-* HashSet：http://zhangshixi.iteye.com/blog/673143
-* LinkedHashSet：http://zhangshixi.iteye.com/blog/673319
-* TreeSet：http://blog.csdn.net/speedme/article/details/22661671
+* HashSet：[http://zhangshixi.iteye.com/blog/673143](http://zhangshixi.iteye.com/blog/673143)
+* LinkedHashSet：[http://zhangshixi.iteye.com/blog/673319](http://zhangshixi.iteye.com/blog/673319)
+* TreeSet：[http://blog.csdn.net/speedme/article/details/22661671](http://blog.csdn.net/speedme/article/details/22661671)
 
 ## 总结
 
