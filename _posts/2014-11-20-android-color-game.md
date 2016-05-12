@@ -21,10 +21,10 @@ excerpt: 《颜色竞技》是一款 Android 平台下的颜色娱乐类游戏�
 下面就让大家具体看看吧。后来也还参加比赛，还拿了奖。  
 
 <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/135462492" allowtransparency="true" allowfullscreen="true"></iframe>
+  <iframe class="embed-responsive-item" src="http://www.tudou.com/programs/view/html5embed.action?type=0&code=R48BJ1kCfYo&lcode=&resourceId=326917756_06_05_99" allowtransparency="true" allowfullscreen="true"></iframe>
 </div>
 
-土豆地址：[http://www.tudou.com/programs/view/R48BJ1kCfYo/](http://www.tudou.com/programs/view/R48BJ1kCfYo/)
+Vimeo地址：[https://vimeo.com/135462492](https://vimeo.com/135462492)
 
 ## 介绍
 

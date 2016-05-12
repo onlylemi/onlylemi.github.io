@@ -21,16 +21,16 @@ excerpt: 这是一个基于 ARM 的微信二维码远程打印机，通过微信
 ### 微信端打印流程
 
 <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/157900135" allowtransparency="true" allowfullscreen="true"></iframe>
+  <iframe class="embed-responsive-item" src="http://www.tudou.com/programs/view/html5embed.action?type=0&code=-GZLCRp99XA&lcode=&resourceId=326917756_06_05_99" allowtransparency="true" allowfullscreen="true"></iframe>
 </div>
-土豆地址：[http://www.tudou.com/programs/view/-GZLCRp99XA/](http://www.tudou.com/programs/view/-GZLCRp99XA/)
+土豆地址：[https://vimeo.com/157900135](https://vimeo.com/157900135)
 
 ### WEB文档上传
 
 <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/157899554" allowtransparency="true" allowfullscreen="true"></iframe>
+  <iframe class="embed-responsive-item" src="http://www.tudou.com/programs/view/html5embed.action?type=0&code=tFjcIEzQdwo&lcode=&resourceId=326917756_06_05_99" allowtransparency="true" allowfullscreen="true"></iframe>
 </div>
-土豆地址：[http://www.tudou.com/programs/view/tFjcIEzQdwo/](http://www.tudou.com/programs/view/tFjcIEzQdwo/)
+土豆地址：[https://vimeo.com/157899554](https://vimeo.com/157899554)
 
 ## 介绍
 

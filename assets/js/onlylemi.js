@@ -7,13 +7,13 @@
 
 $(document).ready(function() {
 
-    /* set https */
+    /* set http */
     if (location.hostname == "onlylemi.github.io") {
         var a = location.href;
-        var b = a.substring(5);
-        a = a.substring(0, 5);
-        if (a == "http:") {
-            location.href = "https:" + b;
+        var b = a.substring(6);
+        a = a.substring(0, 6);
+        if (a == "https:") {
+            location.href = "http:" + b;
         }
     }
 
