@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Android 游戏：颜色竞技
+title: 【Android】游戏：颜色竞技
 permalink: projects/android-color-game/
 category: projects
-tags: [android, game]
+tags: [Android]
 repository: 
 period: 2014-07-10 —— 2014-10-15
 organization-name: 中北Android实验室

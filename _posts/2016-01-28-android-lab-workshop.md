@@ -3,7 +3,7 @@ layout: post
 title: Android 实验室为期五天寒假培训
 permalink: 
 category: blog
-tags: [android]
+tags: [记录]
 repository: android-nuc/AndroidTrian_InWinter
 period: 2016-01-21 —— 2016-01-25
 organization-name: 中北Android实验室
@@ -54,6 +54,7 @@ excerpt: 2016-01-21——2016-01-25，我为实验室大二、大一的学生进
 
 ## 中北Android实验室
 
+* 邮箱：android_nuc@163.com
 * 微信：@android_nuc
 * 微博：[@中北Android实验室](http://weibo.com/nuc4android)
-* Github：[@android-nuc](https://github.com/anroid-nuc)
+* GitHub：[@android-nuc](https://github.com/anroid-nuc)

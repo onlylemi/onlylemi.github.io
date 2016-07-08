@@ -1,10 +1,10 @@
 ---
 layout: post
-title: 从源码角度了解 Set
+title: 【Java】从源码角度了解 Set
 permalink: 
 category: blog
-tags: [java, analysis]
-repository: onlylemi/notes/blob/master/java/Set.md
+tags: [Java]
+repository: onlylemi/notes/tree/master/Java
 period: 
 organization-name: 
 organization-url: 
@@ -54,8 +54,3 @@ HashSet(int initialCapacity, float loadFactor, boolean dummy) {
 ## 推荐阅读
 
 * [从源码角度了解 Map](https://onlylemi.github.io/blog/android-analysis-map/)
-
-## END
-
-欢迎关注我的**微信公众平台(@onlylemi)**，第一时间获取最新更新。  
-![微信公众平台(@onlylemi)](https://onlylemi.github.io/assets/images/qrcode_wechat.jpg)

@@ -1,21 +1,9 @@
-#
-# This file contains configuration flags to customize your site
-#
-
-# Name of your site (displayed in the header)
 name: ONLYLEMI
 
-# Short bio or description (displayed in the header)
 description: 一只不务正业的程序猿。
 
-# URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: /assets/images/logo.png
 
-#
-# Flags below are optional
-#
-
-# Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
   github: onlylemi
@@ -34,12 +22,9 @@ footer-links:
   wechat:
 
 
-# Enter your Disqus shortname (not your username) to enable commenting on posts
-# You can find your shortname on the Settings page of your Disqus account
 disqus: onlylemi
 duoshuo: onlylemi
 
-# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics: UA-72803372-1
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
@@ -53,9 +38,6 @@ enforce_ssl: 'onlylemi.github.io'
 # then add in the baseurl here, like this: "/repository-name"
 baseurl: ""
 
-#
-# !! You don't need to change any of the configuration flags below !!
-#
 
 markdown: kramdown
 highlighter: rouge
@@ -72,19 +54,15 @@ kramdown:
   coderay:
     coderay_line_numbers: inline
 
-# The release of Jekyll Now that you're using
 version: v1.1.0
 
-# Set the Sass partials directory, as we're using @imports
 sass:
   style: :expanded # You might prefer to minify using :compressed
 
-# Use the following plug-ins
 gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
 
-# Exclude these files from your production _site
 exclude:
     - Gemfile
     - Gemfile.lock

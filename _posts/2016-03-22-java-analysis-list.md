@@ -1,10 +1,10 @@
 ---
 layout: post
-title: 从源码角度了解 List
+title: 【Java】从源码角度了解 List
 permalink: 
 category: blog
-tags: [java, analysis]
-repository: onlylemi/notes/blob/master/java/List.md
+tags: [Java]
+repository: onlylemi/notes/tree/master/Java
 period: 
 organization-name: 
 organization-url: 
@@ -16,7 +16,7 @@ excerpt: 从源码的角度解析 Java 集合 List，ArrayList、LinkedList、Ve
 
 大家先看下集合中的类图
 
-![集合类图](https://raw.githubusercontent.com/onlylemi/notes/master/images/collection.png)
+![集合类图](https://raw.githubusercontent.com/onlylemi/res/master/java_collection.png)
 
 ## Collection
 
@@ -293,6 +293,3 @@ public synchronized int search(Object o) {
 ## END
 
 明天给大家解析 `Set` ，欢迎大家关注学习。
-
-欢迎关注我的**微信公众平台(@onlylemi)**，第一时间获取最新更新。  
-![微信公众平台(@onlylemi)](https://onlylemi.github.io/assets/images/qrcode_wechat.jpg)

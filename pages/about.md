@@ -1,53 +1,44 @@
 ---
 layout: page
-title: ABOUT
+title: About me
 permalink: /about/
 
 ---
 
 ![MyPhoto](https://raw.githubusercontent.com/onlylemi/onlylemi.github.io/master/assets/images/logo1.png)
 
-**祁建斌（Jianbin Qi）**
+**祁建斌（onlylemi）**
 
 **一只不务正业的程序猿。**
 
-Android 开发者，程序猿，创意编程玩家。从 2013 年大一开始，进入[中北Android实验室](https://github.com/android-nuc)，一直从事 Android 开发工作，目前担任 Android 实验室负责人。对移动开发、物联网有着浓厚的兴趣，喜欢钻研技术，做一些有创造力的事情，做一些开源的东西。
+Android 开发者，程序猿，创意编程爱好者。从 2013 年大一开始，进入[中北Android实验室](https://github.com/android-nuc)，一直从事 Android 开发工作，目前担任 Android 实验室负责人。对移动开发、物联网有着浓厚的兴趣，喜欢钻研技术，做一些有创造力的事情，做一些开源的东西。
 
-喜欢瞎闹，不知不觉混入了艺术圈，业余时间玩起了创意编程，对数据可视化、生成设计、互动艺术、装置艺术很是喜欢。2015 年 05 月，偶然机会认识了 [程鹏Paul](https://www.linkedin.com/in/peng-cheng-3890b361/zh-cn)，之后和他一起做起了 [OF COURSE](http://www.ofcourse.io) （art & design & technology），致力于创意编程在国内的推广。
+喜欢跨界，业余时间会玩玩创意编程，对数据可视化、生成设计、互动艺术、装置艺术比较喜欢。目前和 [程鹏Paul](https://www.linkedin.com/in/peng-cheng-3890b361/zh-cn)，一起做 [OF COURSE](http://www.ofcourse.io) （art & design & technology），致力于创意编程在国内的推广。同时个人在维护 [inerd.cc](http://inerd.cc)。
 
-### 项目经验
+> 如果你对我感兴趣的话，不妨看看我的[简历](http://onlylemi.github.io/resume/Jianbin_Qi_Resume.pdf)^ ^
 
-* `2015.12 —— 2016.01`《[AndroidCapture For Processing](https://onlylemi.github.io/projects/processing-android-capture/)》—— Processing 交互库，已[开源](https://github.com/onlylemi/processing-android-capture)
-* `2014.12 —— 2015.12`《[基于ARM的微信二维码远程打印系统](https://onlylemi.github.io/projects/wechat-printer-apm/)》大学生创新创业项目
-* `2015.06 —— 2015.11`《[驻足](https://onlylemi.github.io/projects/android-indoor/)》—— 室内地磁定位导航 Android APP
-* `2014.07 —— 2015.11`《[颜色竞技](https://onlylemi.github.io/projects/android-color-game/)》—— Android 平台游戏 APP
+#### 我的一些经历：
 
-### 实践经验 
+* `2016.06.01-02` 在使用 GitHub 中的需求，开发了[download-any-for-github](https://github.com/onlylemi/download-any-for-github) GitHub Chrome插件，方便随意下载项目中任何文件或文件夹，目前已经在 GitHub 上[开源](https://github.com/onlylemi/download-any-for-github)
+* `2016.05.26` 建立 OF COURSE 想当然微信文章集锦网站平台 —— [OF COURSE创意编程](https://ofcourseio.github.io/)
+* `2016.05.10` 采用正则匹配的方式，抓取 [Gank.io](http://gank.io) 的资源备份到 GitHub 上，建立 [Gank.io备份站](https://github.com/onlylemi/gank.io)
+* `2016.05.01-03` 受代码家影响，五一三天开发了[『 i ♥ nerd 』](http://inerd.cc)平台 —— 创意编程营养补给站，目前一直在运营中
+* `2016.04.11` 开源 Android 平台下的室内地图图层控件 [MapView](https://github.com/onlylemi/MapView)
+* `2015.12` 两周时间开发[《AndroidCapture For Processing》](https://onlylemi.github.io/projects/processing-android-capture/)—— Processing 交互库，已[开源](https://github.com/onlylemi/processing-android-capture)
+* `2015.11` 项目《驻足》获 2015 华北五省计算机应用大赛全国一等奖，颁奖典礼压轴项目展示机会
+* `2015.06 —— 2015.11` 大二暑期开始做[《驻足》](https://onlylemi.github.io/projects/android-indoor/)—— 室内地磁定位导航 Android APP
+* `2015.05` 获得 2015 “甲骨文杯”全国 Java 程序设计大赛华北赛区二等奖
+* `2015.03` 项目《颜色竞技》获中北大学刘鼎杯大学生创新创业大赛二等奖
+* `2014.12 —— 2015.12`团队三人开始做[《基于ARM的微信二维码远程打印系统》](https://onlylemi.github.io/projects/wechat-printer-apm/)大学生创新创业项目
+* `2014.12` 获得新浪云SAE中级开发者认证，编号：E10004376
+* `2014.11` 项目《颜色竞技》获 2014 华北五省计算机应用大赛全国二等奖
+* `2014.07 —— 2015.11`大一暑期开始做[《颜色竞技》](https://onlylemi.github.io/projects/android-color-game/)
+* `2014.08` 在洛阳参加 2014 中国机器人大赛暨 RocoCup 公开赛，获取总决赛优胜奖
 
-* `2015.06 —— 至今` 中北 Android 实验室负责人
-* `2015.05 —— 至今` OF COURSE 创想空间
-* `2014.04 —— 2015.05` 中北机器人实验室成员
-* `2013.09 —— 2015.06` 中北 Android 实验室成员
+#### 联系我的地方：
 
-### 荣誉
-
-* `2015.11` 2015 华北五省计算机应用大赛山西省一等奖，全国一等奖，颁奖典礼压轴项目展示机会
-* `2015.05` 2015 “甲骨文杯”全国 Java 程序设计大赛华北赛区二等奖
-* `2015.03` 中北大学刘鼎杯大学生创新创业大赛二等奖
-* `2014.11` 2014 华北五省计算机应用大赛山西省二等奖，全国二等奖
-* `2014.12` 新浪云SAE中级开发者认证，编号：E10004376
-* `2014.08` 2014 中国机器人大赛暨 RocoCup 公开赛优胜奖
-
-### 讲座
-
-* `2015.12` 中北大学15级数字媒体专业
-* `2015.09` 中北大学15级物联网工程专业
-* `2014.11` 中北大学13级物联网工程专业
-
-### 联系
-
-* 邮箱：xiaomi_0623@163.com
+* 邮箱：onlylemi.com(AT)gmail.com
 * 微信：@xiaomi-0623
 * 微博：[@only乐秘](http://weibo.com/xiaomi-0623)
-* Github：[@onlylemi](https://github.com/onlylemi)
-* Linkedin：[@onlylemi](https://www.linkedin.com/in/onlylemi)
+* GitHub：[@onlylemi](https://github.com/onlylemi)
+* Linkedin：[linkedin.com/in/onlylemi](https://www.linkedin.com/in/onlylemi)

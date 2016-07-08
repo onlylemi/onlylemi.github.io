@@ -3,7 +3,7 @@ layout: post
 title: 一个 Processing 与 Android 交互的库
 permalink: projects/processing-android-capture/
 category: projects
-tags: [android, processing]
+tags: [processing, android]
 repository: onlylemi/processing-android-capture
 period: 2015-12-25 —— 2015-01-05
 organization-name: 中北Android实验室
@@ -240,7 +240,7 @@ IDEA原项目地址：[https://github.com/onlylemi/P5AndroidCapture](https://git
 Android APP地址：[https://github.com/onlylemi/AndroidCapture](https://github.com/onlylemi/AndroidCapture)
 
 ## CONTACT
-**Eamil：** xiaomi_0623@163.com  
+**Eamil：** onlylemi.com@gmial.com 
 **Wechat：** @xiaomi-0623  
 **Weibo：** [@only乐秘](http://www.weibo.com/xiaomi0623)  
-**Github：** [@onlylemi](https://github.com/onlylemi)
+**GitHub：** [@onlylemi](https://github.com/onlylemi)
