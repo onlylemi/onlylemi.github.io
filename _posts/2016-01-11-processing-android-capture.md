@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 一个 Processing 与 Android 交互的库
+title: 【开源项目】一个 Processing 与 Android 交互的库
 permalink: projects/processing-android-capture/
 category: projects
 tags: [Processing, Android, 开源]
