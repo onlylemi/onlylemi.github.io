@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 基于 ARM 的微信二维码远程打印系统
+title: 【项目】基于 ARM 的微信二维码远程打印系统
 permalink: projects/wechat-printer-apm/
 category: projects
 tags: [ARM]

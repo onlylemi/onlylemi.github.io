@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 【Android】游戏：颜色竞技
+title: 【项目】游戏：颜色竞技
 permalink: projects/android-color-game/
 category: projects
 tags: [Android]

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 【Android】驻足（室内地磁定位导航 APP）
+title: 【项目】驻足（室内地磁定位导航 APP）
 permalink: projects/android-indoor/
 category: projects
 tags: [Android]
