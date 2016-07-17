@@ -19,7 +19,7 @@ Android 开发者，程序猿，创意编程爱好者。从 2013 年大一开始
 
 #### 我的一些经历：
 
-* `2016.06.20-30` 采用 izzyleung 提供的[知乎日报API分析](https://github.com/izzyleung/ZhihuDailyPurify/wiki/知乎日报-API-分析)，开发了[《知乎日报》高仿版](https://github.com/onlylemi/ZhihuDaily)，采用了 Picasa、okhttp、rxjava、rxandroid 等开源项目
+* `2016.06.20-30` 采用 izzyleung 提供的[知乎日报API分析](https://github.com/izzyleung/ZhihuDailyPurify/wiki/知乎日报-API-分析)，开发了[《知乎日报》高仿版](https://github.com/onlylemi/ZhihuDaily)，采用了 Picasso、okhttp、rxjava、rxandroid 等开源项目
 * `2016.06.01-02` 在使用 GitHub 中的需求，开发了[download-any-for-github](https://github.com/onlylemi/download-any-for-github) GitHub Chrome插件，方便随意下载项目中任何文件或文件夹，目前已经在 GitHub 上[开源](https://github.com/onlylemi/download-any-for-github)
 * `2016.05.26` 建立 OF COURSE 想当然微信文章集锦网站平台 —— [OF COURSE创意编程](https://ofcourseio.github.io/)
 * `2016.05.10` 采用正则匹配的方式，抓取 [Gank.io](http://gank.io) 的资源备份到 GitHub 上，建立 [Gank.io备份站](https://github.com/onlylemi/gank.io)

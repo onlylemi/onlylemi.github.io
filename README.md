@@ -1,6 +1,5 @@
 # ONLYLEMI
 
-
 一只不务正业的程序猿。A little programmer.
 
 * jekyll
@@ -13,10 +12,4 @@
 
 ## Wlecome to visit
 
-About me: https://onlylemi.github.io/about/
-
-## BACKUP
-
-```
-git push gitcafe master:gitcafe-pages
-```
+About me: http://onlylemi.github.io/about/

@@ -5,7 +5,7 @@ permalink: projects/android-color-game/
 category: projects
 tags: [Android]
 repository: 
-period: 2014-07-10 —— 2014-10-15
+period: 2016.04.11
 organization-name: 中北Android实验室
 organization-url: https://github.com/android-nuc
 excerpt: 《颜色竞技》是一款 Android 平台下的颜色娱乐类游戏，游戏分为三个模块，分别为 ColorFly、ColorRun、ColorSwim 三个模块，分别为消除、酷跑以及碰撞三种类型，以颜色为核心，使用五彩的颜色作为游戏的素材、背景。同时还可以通过手机摄像头捕获颜色进行自定义游戏哦！

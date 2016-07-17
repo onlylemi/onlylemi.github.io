@@ -3,7 +3,7 @@ layout: post
 title: 一个 Processing 与 Android 交互的库
 permalink: projects/processing-android-capture/
 category: projects
-tags: [processing, android]
+tags: [Processing, Android, 开源]
 repository: onlylemi/processing-android-capture
 period: 2015-12-25 —— 2015-01-05
 organization-name: 中北Android实验室
