@@ -1,18 +1,18 @@
 ---
 layout: post
-title: 【项目】知乎日报-高仿版
+title: 【项目】知乎日报-精简版
 permalink: projects/android-zhihu-daily/
 category: projects
 tags: [Android]
 repository: onlylemi/ZhihuDaily
 period: 2016.06.18 —— 2016.06-28
-excerpt: 该项目作为学习练习，整个项目采用 MVP 设计框架实现，参考自 google 官方提供的 MVP 实例 android-architecture。知乎日报 API 来自 izzyleung 提供的知乎日报 API 分析。
+excerpt: 整个项目采用 MVP 设计框架实现，参考自 google 官方提供的 MVP 实例 android-architecture。API 来自 izzyleung 提供的知乎日报 API 分析。
 
 ---
 
 > 项目地址：[https://github.com/onlylemi/ZhihuDaily](https://github.com/onlylemi/ZhihuDaily)
 
-该项目作为学习练习，整个项目采用 `MVP` 设计框架实现，参考自 `google` 官方提供的 `MVP` 实例 [android-architecture](https://github.com/googlesamples/android-architecture)。知乎日报 API 来自 [izzyleung](https://github.com/izzyleung) 提供的[知乎日报 API 分析](知乎日报 API 分析)。
+整个项目采用 `MVP` 设计框架实现，参考自 `google` 官方提供的 `MVP` 实例 [android-architecture](https://github.com/googlesamples/android-architecture)。知乎日报 API 来自 [izzyleung](https://github.com/izzyleung) 提供的[知乎日报 API 分析](知乎日报 API 分析)。
 
 > MVP 介绍参考之前写的一篇：[【设计框架】Android 中的 MVP 模式](http://onlylemi.github.io/blog/android-mvp/)
 
