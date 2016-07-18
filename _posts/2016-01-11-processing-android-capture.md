@@ -14,7 +14,7 @@ excerpt: 这是一个有关 processing 和 android 交互的 library。通过 An
 
 # AndroidCapture For Processing
 
-![Logo](https://raw.githubusercontent.com/onlylemi/onlylemi.github.io/master/assets/images/post/processing_android_capture_logo.gif)
+![Logo](https://raw.githubusercontent.com/onlylemi/res/master/processing-android-capture-logo.gif)
 
 > 
 * 已被 [processing.org](https://processing.org/reference/libraries/) 官方收录
@@ -30,7 +30,7 @@ excerpt: 这是一个有关 processing 和 android 交互的 library。通过 An
 
 可是它的效果不得不佩服呀，简单的几句代码就可以勾勒出一幅优美的画面，做**可视化（我最喜欢做的）**又是如此方便，所以就拿 processing 玩起来了。前段时间做的一个**室内地磁导航 app**，在给大家讲地磁导航原理的时候讲了又讲，可是大家就是不明白，最后用做了一个简单地磁导航原理模拟动画，大家瞬间明白。在不断的尝试后，越来越喜欢这门语言，现在一有空就会拿出来玩玩。**手握程序，不仅可以写应用，还可以娱乐、画画，真是给程序猿枯燥的生活添加了一笔别样的色彩（“一只不务正业的程序猿”就这样来了）**。哈哈，程序猿也不是你想的那样无趣的，这样的多好啊！
 
-![室内导航原理模型](https://raw.githubusercontent.com/onlylemi/processing-android-capture/master/androidcapture8.gif)
+![室内导航原理模型](https://raw.githubusercontent.com/onlylemi/res/master/android-indoor-visual.gif)
 
 另外，大家都知道在 **processing** 里可以写程序直接采用 **android-mode** 执行，只要你的电脑中有 **android-sdk**，就可以在 android 手机上运行，但是大家觉得运行效果如何呢？我只想说还能不能再卡点呀，本来一幅优美的画面，硬生生的给你放成慢动作，还是超慢动作啊。另外，**[processing foundation](https://github.com/processing)** 对 **[processing-android](https://github.com/processing/processing-android)** 的维护的又很少，所以性能也就不是很令人满意。但是，作为一名android开发者，我认为android手机是个很好的东西啊，凭借它有丰富的**传感器**、**摄像头（本文的库就是干）**、**画板**以及它的可移动、灵活的特点，既然让它本身执行processing很卡，那为何不让它解放出来，只从它上获取数据，把数据交给processing pc端做处理呢？
 
@@ -44,16 +44,16 @@ excerpt: 这是一个有关 processing 和 android 交互的 library。通过 An
 废话不多说了，先看看 Android App 界面，然后给大家撸代码讲解。  
 
 ## Android APP
-![androidcapture1](https://raw.githubusercontent.com/onlylemi/AndroidCapture/master/androidcapture1.jpg)  
+![androidcapture1](https://raw.githubusercontent.com/onlylemi/res/master/androidcapture1.jpg)  
 Δ  android 客户端 首页
 
-![androidcapture2](https://raw.githubusercontent.com/onlylemi/AndroidCapture/master/androidcapture2.jpg)  
+![androidcapture2](https://raw.githubusercontent.com/onlylemi/res/master/androidcapture2.jpg)  
 Δ  android 客户端 登录服务器界面（地址为 processing 服务端的本地ip地址，pc 端 cmd 进入命令行模式，输入 ipconfig 即可查看本地局域网 ip 地址）
 
-![androidcapture3](https://raw.githubusercontent.com/onlylemi/AndroidCapture/master/androidcapture3.jpg)  
+![androidcapture3](https://raw.githubusercontent.com/onlylemi/res/master/androidcapture3.jpg)  
 Δ  android 客户端 颜色识别界面
 
-![androidcapture4](https://raw.githubusercontent.com/onlylemi/AndroidCapture/master/androidcapture4.jpg)  
+![androidcapture4](https://raw.githubusercontent.com/onlylemi/res/master/androidcapture4.jpg)  
 Δ  android 客户端 传感器选择界面
 
 ## 使用方法
@@ -206,31 +206,31 @@ void draw() {
 
 代码1：[CameraImage](https://github.com/onlylemi/processing-android-capture/tree/master/examples/AndroidCamera/CameraImage)  
 效果1：  
-![CameraImage](https://raw.githubusercontent.com/onlylemi/processing-android-capture/master/camera_image.gif)
+![CameraImage](https://raw.githubusercontent.com/onlylemi/res/master/processing-android-capture-camera_image.gif)
 
 ---
 
-代码2：[CameraColor](https://github.com/onlylemi/processing-android-capture/tree/master/examples/AndroidCamera/CameraColor)  
+代码2：[CameraColor](https://github.com/onlylemi/res/master/examples/AndroidCamera/CameraColor)  
 效果2：  
-![CameraColor](https://raw.githubusercontent.com/onlylemi/processing-android-capture/master/camera_color.gif)
+![CameraColor](https://raw.githubusercontent.com/onlylemi/res/master/processing-android-capture-camera_color.gif)
 
 ---
 
 代码3：[AccSensor](https://github.com/onlylemi/processing-android-capture/tree/master/examples/AndroidSensor/AccSensor)  
 效果3：  
-![AccSensor](https://raw.githubusercontent.com/onlylemi/processing-android-capture/master/sensor_color.gif)
+![AccSensor](https://raw.githubusercontent.com/onlylemi/res/master/processing-android-capture-sensor_color.gif)
 
 --- 
 
 代码4：[CameraMusic](https://github.com/onlylemi/processing-android-capture/tree/master/examples/AndroidCamera/CameraMusic)  
 效果4：  
-![CameraMusic](https://raw.githubusercontent.com/onlylemi/processing-android-capture/master/camera_music.gif)
+![CameraMusic](https://raw.githubusercontent.com/onlylemi/res/master/processing-android-capture-camera_music.gif)
 
 ---
 
 代码5：[CameraPixel](https://github.com/onlylemi/processing-android-capture/tree/master/examples/AndroidCamera/CameraPixel)  
 效果5：  
-![CameraPixel](https://raw.githubusercontent.com/onlylemi/processing-android-capture/master/camera_pixel.gif)
+![CameraPixel](https://raw.githubusercontent.com/onlylemi/res/master/processing-android-capture-camera_pixel.gif)
 
 ## END
 本篇文章中所有提到的代码都是该 **lib** 提供的[examples](https://github.com/onlylemi/processing-android-capture/tree/master/examples)，都可以在 **github** 上下载到，因为processing是由java语言实现的，所以整个项目我是采用 [IntelliJ IDEA](https://www.jetbrains.com/idea/) IDE所实现（强烈建议大家使用，写代码 so 爽），然后再转到 **processing** 下的。项目的android客户端使用 [Android studio](http://developer.android.com/sdk/index.html) 实现。所有代码都已开源到 **github** 上，欢迎大家指导批评。
@@ -240,7 +240,7 @@ IDEA原项目地址：[https://github.com/onlylemi/P5AndroidCapture](https://git
 Android APP地址：[https://github.com/onlylemi/AndroidCapture](https://github.com/onlylemi/AndroidCapture)
 
 ## CONTACT
-**Eamil：** onlylemi.com@gmial.com 
+**Eamil：** onlylemi.com@gmial.com   
 **Wechat：** @xiaomi-0623  
 **Weibo：** [@only乐秘](http://www.weibo.com/xiaomi0623)  
 **GitHub：** [@onlylemi](https://github.com/onlylemi)

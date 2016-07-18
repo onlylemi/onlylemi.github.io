@@ -53,7 +53,7 @@ excerpt: 《驻足》是一款室内地磁导航 Android APP，通过规划最�
   * 最短路径（两点间）问题采用 **Floyd 算法**
   * 最优路径（多点间）TSP 问题采用 **遗传算法**。[`遗传算法可视化研究`](https://github.com/onlylemi/GeneticTSP)
 * 摄像头导航——增强现实技术。打开摄像头可以与当前环境同步，在屏幕中显示路线指示箭头。采用双 SurfaceView 实现，一个承载 Camera 预览，另一个做箭头指示，通过设置监听回调来匹配
-* 后台服务器采用 `Alpha` + `php` + `mysql`，应用代码部署到 [新浪 SAE](http://www.sinacloud.com/sae.html) 的云服务器上，保证 Android 客户端与服务器的通信
+* 后台服务器采用 `Apache` + `PHP` + `MySQL`，应用代码部署到 [新浪 SAE](http://www.sinacloud.com/sae.html) 的云服务器上，保证 Android 客户端与服务器的通信
 * 客户端通过 **异步加载 AsyncTask** 方式读取服务器数据
 * 图片加载采用三级缓存 `LruCache`、`DiskLruCache`、`Net`，自己封装 [`AsyncImageLoader`](https://github.com/onlylemi/notes/blob/master/snippet/AsyncImageLoader.java)
 * 采用 `git` 协同开发
