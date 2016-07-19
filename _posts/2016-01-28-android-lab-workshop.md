@@ -16,9 +16,9 @@ excerpt: 2016-01-21——2016-01-25，我为实验室大二、大一的学生进
 
 现在我总结下我进行的 **Android 进阶培训**有关知识点。  
 
-![实验室培训场面1](https://raw.githubusercontent.com/onlylemi/onlylemi.github.io/master/assets/images/post/android-lab-workshop_1.jpg)  
+![实验室培训场面1](https://raw.githubusercontent.com/onlylemi/res/master/android-lab-workshop_1.jpg)  
 
-![实验室培训场面2](https://raw.githubusercontent.com/onlylemi/onlylemi.github.io/master/assets/images/post/android-lab-workshop_4.jpg)
+![实验室培训场面2](https://raw.githubusercontent.com/onlylemi/res/master/android-lab-workshop_4.jpg)
 
 ## 内容
 
@@ -44,9 +44,9 @@ excerpt: 2016-01-21——2016-01-25，我为实验室大二、大一的学生进
 
 ## 作品截图
 
-![FlappyBird1](https://raw.githubusercontent.com/onlylemi/res/android-lab-workshop_5.jpg)
+![FlappyBird1](https://raw.githubusercontent.com/onlylemi/res/master/android-lab-workshop_5.jpg)
 
-![FlappyBird1](https://raw.githubusercontent.com/onlylemi/res/android-lab-workshop_3.jpg)  
+![FlappyBird1](https://raw.githubusercontent.com/onlylemi/res/master/android-lab-workshop_3.jpg)  
 
 ## END
 
