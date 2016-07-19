@@ -28,7 +28,7 @@ Google官方提供的MVP示例为例分析：[https://github.com/googlesamples/a
 
 ### 项目结构
 
-```
+```java
 todo-mvp
 	addedittask
 		AddEditTaskActivity.java
