@@ -71,9 +71,10 @@ $(document).ready(function() {
         show_contents = !show_contents;
     });
 
-    /* 滚动监听 */
-
-
+    var today = Date.parse(new Date().toLocaleDateString());
+    var startday = Date.parse(new Date("2011-12-26").toLocaleDateString());
+    var lday = (today - startday) / (24 * 60 * 60 * 1000);
+    $(".love-day").html(lday + 1);
 
     /* search */
     var time1 = 0;
